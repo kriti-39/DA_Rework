@@ -1,3 +1,40 @@
+@import url('https://fonts.cdnfonts.com/css/the-seasons');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #120a05;
+  color: #f0e6d0;
+  font-family: 'Jost', sans-serif;
+  overflow-x: hidden;
+}
+
+.overflow-x-auto::-webkit-scrollbar { display: none; }
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #120a05;
+}
+::-webkit-scrollbar-thumb {
+  background: #c9a455;
+  border-radius: 2px;
+}
+
+::selection {
+  background: #c9a455;
+  color: #120a05;
+}
