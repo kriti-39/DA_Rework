@@ -281,7 +281,7 @@ const Learn = () => {
               </p>
             </motion.div>
 
-             01 · Classes heading */
+            {/* 01 · Classes heading */}
             <motion.div
               className="mb-8"
               initial={{ opacity: 0, y: 24 }}

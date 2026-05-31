@@ -173,7 +173,7 @@ const Navbar = () => {
       <AnimatePresence>
         {!visible && (
           <motion.button
-            className="fixed top-0 left-10 z-[49] flex items-center gap-2.5 px-5 py-2.5
+            className="fixed top-0 right-4 md:right-auto md:left-10 z-[49] flex items-center gap-2.5 px-5 py-2.5
                        bg-[#120a05]/85 backdrop-blur-md
                        border-x border-b border-[#c9a455]/30
                        rounded-b-xl

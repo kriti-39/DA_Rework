@@ -1,11 +1,16 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
+import Navbar       from "./components/Navbar/Navbar";
+import NavbarMobile from "./components/Navbar/NavbarMobile";
+import Footer       from "./components/Footer/Footer";
+import FooterMobile from "./components/Footer/FooterMobile";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Learn from "./pages/Learn";
-import Gallery from "./pages/Gallery";
+import About       from "./pages/About";
+import AboutMobile from "./pages/AboutMobile";
+import Learn       from "./pages/Learn";
+import LearnMobile from "./pages/LearnMobile";
+import Gallery       from "./pages/Gallery";
+import GalleryMobile from "./pages/GalleryMobile";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -34,14 +39,16 @@ const App = () => {
 
       <div className="relative">
         <ScrollToTop />
-        <Navbar />
+        <div className="hidden md:block"><Navbar /></div>
+        <NavbarMobile />
         <Routes>
           <Route path="/"        element={<Home />}    />
-          <Route path="/about"   element={<About />}   />
-          <Route path="/learn"   element={<Learn />}   />
-          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/about"   element={<><div className="hidden md:block"><About /></div><AboutMobile /></>} />
+          <Route path="/learn"   element={<><div className="hidden md:block"><Learn /></div><LearnMobile /></>} />
+          <Route path="/gallery" element={<><div className="hidden md:block"><Gallery /></div><GalleryMobile /></>} />
         </Routes>
-        <Footer />
+        <div className="hidden md:block"><Footer /></div>
+        <FooterMobile />
       </div>
     </Router>
   );

@@ -52,11 +52,11 @@ const AboutTeaser = () => {
       {/* Grain texture */}
       
 
-      <div className="relative z-10 max-w-6xl mx-auto px-8 md:px-16 lg:px-20 pt-6 pb-16 md:pt-8 md:pb-20">
+      <div className="relative z-10 max-w-6xl mx-auto px-8 md:px-16 lg:px-20 pt-4 pb-4 md:pt-4 md:pb-20">
 
-        {/* Section label */}
+        {/* Section label — hidden on mobile */}
         <motion.div
-          className="flex items-center gap-4 mb-14"
+          className="hidden md:flex items-center gap-4 mb-14"
           variants={fadeIn}
           custom={0}
           initial="hidden"
@@ -71,7 +71,7 @@ const AboutTeaser = () => {
 
         {/* Pull quote */}
         <motion.blockquote
-          className="relative font-playfair italic text-[#f0e6d0]/85 text-[1.55rem] md:text-[1.95rem] lg:text-[2.3rem] leading-[1.55] max-w-3xl mb-16 pl-7"
+          className="relative font-playfair italic text-[#f0e6d0]/85 text-[1.55rem] md:text-[1.95rem] lg:text-[2.3rem] leading-[1.55] max-w-3xl mb-10 md:mb-16 pl-7"
           variants={fadeUp}
           custom={0.12}
           initial="hidden"
@@ -89,7 +89,7 @@ const AboutTeaser = () => {
         </motion.blockquote>
 
         {/* Bio columns */}
-        <div className="grid md:grid-cols-2 gap-10 mb-10">
+        <div className="grid md:grid-cols-2 gap-4 md:gap-10 mb-10">
           <motion.p
             className="font-jost font-light text-[#b8966e] text-sm md:text-[1.1rem] leading-[1.6]"
             variants={fadeUp}
@@ -163,6 +163,7 @@ const AboutTeaser = () => {
 
         {/* CTA */}
         <motion.div
+          className="flex justify-center"
           variants={fadeIn}
           custom={0.15}
           initial="hidden"
