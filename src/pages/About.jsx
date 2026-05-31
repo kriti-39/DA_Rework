@@ -1,5 +1,6 @@
 import { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useTransform, useSpring, AnimatePresence } from "framer-motion";
+import DevaSaman from "../components/DevaSaman/DevaSaman";
 
 // ── GOLDEN WAVES (same as Hero) ───────────────────────────
 const GoldenWaves = () => {
@@ -154,8 +155,8 @@ const About = () => {
     target: about3Ref,
     offset: ["start end", "end start"],
   });
-  const about3Raw   = useTransform(about3Prog, [0, 1], [1.0, 1.12]);
-  const about3Scale = useSpring(about3Raw, { stiffness: 40, damping: 20 });
+  const about3Raw   = useTransform(about3Prog, [0, 1], [1.0, 1.06]);
+  const about3Scale = useSpring(about3Raw, { stiffness: 30, damping: 28 });
 
   // AwardsImg.png scroll zoom
   const { scrollYProgress: awardsImgProg } = useScroll({
@@ -218,7 +219,7 @@ const About = () => {
               </p>
 
               {/* Paragraphs 1 & 2 */}
-              <div className="space-y-4 font-jost font-light text-[#a08060]
+              <div className="space-y-4 font-jost font-light text-[#b8966e]
                               text-[0.88rem] md:text-[0.93rem] leading-[1.9] mb-2">
                 <p className="font-playfair italic text-[#f0e6d0]/50 text-[0.9rem] leading-[1.8] border-l-2 border-[#c9a455]/30 pl-4">
                   "I didn't begin learning music with the intention of becoming a professional performer.
@@ -226,20 +227,13 @@ const About = () => {
                   embrace as a lifelong companion."
                 </p>
                 <p>
-                  Born in the industrial township of <span className="text-[#c9a455]/80 font-normal">Sindri, Jharkhand</span>,
-                  into a simple, educated Bengali family, Debapriya showed a natural inclination toward
-                  the arts from childhood. He never formally learned the seven notes by sitting with a
-                  teacher — instead, he absorbed them by listening to his mother,{" "}
-                  <span className="text-[#c9a455]/80 font-normal">Anita Adhikary</span>, sing and practice.
-                  She was herself a disciple of Pt. Jivnath Jha — popularly known as Taanraj.
+                  Born in the industrial township of {" "}
+                <span className="text-[#c9a455]/80 font-normal">Sindri, Jharkhand</span>{" "}, into a humble and educated Bengali family, Debapriya displayed a natural affinity for the arts from an early age. His introduction to music did not begin through formal lessons, but through the quiet, immersive world of listening to his mother, {" "}
+                <span className="text-[#c9a455]/80 font-normal">Anita Adhikary</span>{" "}, sing and practise at home. A disciple of Pt. Jivnath Jha, affectionately known as Taanraj, she became his very first source of musical inspiration.
+
                 </p>
                 <p>
-                  Recognising the spark in her son, she took him to{" "}
-                  <span className="text-[#c9a455]/80 font-normal">Pt. Samaresh Chawdhury</span> of the
-                  Senia and Maihar gharanas, who accepted Debapriya as his Gandabandh disciple. From the
-                  age of eight, he trained under him for fourteen years — his mother travelling long
-                  distances from Sindri to Durgapur, allowing no excuse: not weather, not festivals,
-                  not circumstance.
+                   Recognising her son’s innate sensitivity towards music, she introduced him to Pt. Samaresh Chawdhury of the Senia and Maihar gharanas, who later accepted Debapriya as his Gandabandh disciple. From the age of eight, Debapriya underwent rigorous training under his guidance for fourteen formative years. Throughout this journey, his mother travelled tirelessly between Sindri and Durgapur, never allowing weather, festivals, or circumstance to interrupt his learning — a quiet testament to her unwavering dedication and belief in her son’s path.
                 </p>
               </div>
             </motion.div>
@@ -249,10 +243,10 @@ const About = () => {
               <motion.img
                 src="/assets/About3.png"
                 alt=""
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 2.4, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
+                transition={{ duration: 3.8, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
                 style={{
                   width: "100%",
                   objectFit: "contain",
@@ -269,7 +263,7 @@ const About = () => {
 
             {/* Para 3 & 4 + Musical Journey start — below About3.png */}
             <motion.div
-              className="space-y-4 font-jost font-light text-[#a08060]
+              className="space-y-4 font-jost font-light text-[#b8966e]
                           text-[0.88rem] md:text-[0.93rem] leading-[1.9] pt-2 pb-16"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -283,10 +277,9 @@ const About = () => {
                 skipping the class."
               </p>
               <p>
-                Under Pt. Chawdhury's guidance, Debapriya developed deep insights into voice culture,
-                smoothness, and clarity in executing intricate trills — a foundation that would shape
-                everything to come. His training was not merely technical; it was a formation of
-                character, patience, and the capacity to truly listen.
+                Under the guidance of Pt. Samaresh Chawdhury, Debapriya cultivated a profound understanding of voice culture, tonal smoothness, and the clarity required to render intricate musical movements with grace and precision. These formative years laid the foundation for the artistic identity that would gradually unfold in the years to come.
+
+Yet his training extended far beyond technique alone. It was an education in discipline, patience, humility, and the art of deep listening — values that became inseparable from his music and personality alike.
               </p>
 
               {/* Musical Journey starts here on the left */}
@@ -297,18 +290,18 @@ const About = () => {
                 </span>
               </div>
               <p>
-                His musical journey further flourished under the legendary{" "}
-                <span className="text-[#c9a455]/80 font-normal">Padma Vibhushan awardee Dr. Girija Devi</span>{" "}
-                of the Benaras gharana, with whom he trained as a Gandabandh disciple for eleven years.
-                Under her guidance, he mastered Thumri, Tappa, Tap-Thumri, Dadra, Kajri, and Jhula —
-                along with rare compositions and the khayal tradition of Benaras. Dr. Girija Devi enriched
-                his artistry with strength, depth, and the vision to go beyond mere notes and words.
+          
+                Debapriya’s musical journey found deeper expression under the legendary {" "}
+                <span className="text-[#c9a455]/80 font-normal">Padma Vibhushan awardee Dr. Girija Devi</span>{" "} of the Benaras gharana, with whom he trained as a Gandabandh disciple for eleven transformative years. Under her affectionate yet rigorous guidance, he immersed himself in the rich expressive traditions of Thumri, Tappa, Tap-Thumri, Dadra, Kajri, and Jhula, while also absorbing rare compositions and the distinctive khayal gayaki of Benaras.
+                More than repertoire alone, Dr. Girija Devi shaped his artistic vision with emotional depth, inner strength, and an understanding that music must transcend the boundaries of notes and words.
+
+
               </p>
             </motion.div>
           </div>
 
           {/* ── RIGHT COLUMN ── */}
-          <div className="w-full lg:w-[48%] shrink-0 flex flex-col">
+          <div className="w-full lg:w-[45%] shrink-0 flex flex-col">
 
             {/* AboutHero.png — scroll zoom */}
             <div ref={heroImgRef} className="overflow-hidden" style={{ minHeight: "60vh" }}>
@@ -334,7 +327,7 @@ const About = () => {
 
             {/* Paras — right column, Musical Journey */}
             <motion.div
-              className="space-y-4 font-jost font-light text-[#a08060]
+              className="space-y-4 font-jost font-light text-[#b8966e]
                          text-[0.88rem] md:text-[0.93rem] leading-[1.9] px-2 pb-16 mt-4"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -342,34 +335,32 @@ const About = () => {
               transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
             >
               <p>
-                He also received guidance from{" "}
-                <span className="text-[#c9a455]/80 font-normal">Pt. Kumar Prasad Mukherjee</span> of the
-                Agra and Rampur-Sahaswan traditions, and from{" "}
-                <span className="text-[#c9a455]/80 font-normal">Pt. Vijay Kichlu</span> of the Agra gharana —
-                who gifted him numerous bandishes and a refined perspective on the technical beauty of ragas.
+                 Through her teachings, he learned to approach music not merely as performance, but as a living expression of experience, devotion, and humanity.
+                He also received guidance from Pt. Kumar Prasad Mukherjee of the Agra and Rampur-Sahaswan traditions, and from Pt. Vijay Kichlu of the Agra gharana, who entrusted him with numerous rare bandishes and a deeply refined understanding of the technical and aesthetic beauty of ragas.
+
+A torchbearer of the Senia-Banaras tradition, Debapriya Adhikary’s music is marked by a rare balance of tradition and innovation. More than three decades of rigorous training have shaped a style distinguished by clarity, emotional depth, and technical finesse. His command over gamaks, intricate taans, meends, and swargam has earned him admiration from audiences and connoisseurs across the world.
+
+
               </p>
               <p>
-                His ability to blend tradition with innovation, combined with over three decades of rigorous
-                training, sets him apart. An{" "}
-                <span className="text-[#c9a455]/80 font-normal">A-Grade artiste of All India Radio</span> and
-                a <span className="text-[#c9a455]/80 font-normal">National and President's Award winner</span>,
-                his clarity in executing gamaks, intricate taans, meends, and swargam has earned him
-                admiration worldwide.
+                An A-Grade Artist of All India Radio, as well as a recipient of the National Film Award and the President’s Award, he represents a unique confluence of scholarship, performance, and creative vision.
+
+He holds a Master’s degree in Music and was awarded the Junior Research Fellowship by the Ministry of Culture, Government of India, for his research on the history of Thumri and the contribution of Girija Devi. Continuing his lifelong pursuit of musical refinement, he is presently training under Pt. Uday Bhawalkar, immersing himself in the profound nuances of Dhrupad.
               </p>
-              <p>
-                He holds a Master's degree in Music and was awarded the{" "}
-                <span className="text-[#c9a455]/80 font-normal">Junior Research Fellowship</span> by the
-                Ministry of Culture, Government of India, for his research on the history of Thumri and the
-                contribution of Girija Devi. At present, he continues to refine his artistry under{" "}
-                <span className="text-[#c9a455]/80 font-normal">Pt. Uday Bhawalkar</span>, focusing on the
-                nuances of Dhrupad.
-              </p>
+              
             </motion.div>
 
           </div>
 
         </div>
       </section>
+
+      <Divider />
+
+      {/* ══════════════════════════════════════════════════
+          BROTHERHOOD — DevaSaman duo section
+      ══════════════════════════════════════════════════ */}
+      <DevaSaman />
 
       <Divider />
 
@@ -429,13 +420,11 @@ const About = () => {
               Thumri Queen ·  Gurumaa
             </p>
 
-            <div className="space-y-5 font-jost font-light text-[#a08060]
+            <div className="space-y-5 font-jost font-light text-[#b8966e]
                             text-[0.88rem] md:text-[0.93rem] leading-[1.9]">
               <p>
                 <span className="font-playfair italic text-[#f0e6d0]/55">Girija – A Lifetime in Music</span>{" "}
-                is a heartfelt tribute by the duo to their revered Gurumaa, the legendary Girija Devi.
-                The film reflects not only her musical brilliance but also the spiritual depth and
-                human simplicity that defined her life.
+                is a heartfelt tribute by the duo DevaSaman to their revered Gurumaa, the legendary Girija Devi. The film reflects not only her unparalleled musical brilliance, but also the spiritual depth, warmth, and human simplicity that defined her life and presence.
               </p>
 
               {/* Duo's quote */}
@@ -450,28 +439,11 @@ const About = () => {
                 music she uttered."
               </p>
 
-              {/* Ornamental name break */}
-              <div className="flex items-center gap-4 py-1">
-                <div className="h-[1px] flex-1 bg-gradient-to-r from-[#c9a455]/25 to-transparent" />
-                <span className="font-cinzel text-[#c9a455]/40 text-[0.7rem] tracking-[0.4em] uppercase">
-                  Girija Devi
-                </span>
-                <div className="h-[1px] flex-1 bg-gradient-to-l from-[#c9a455]/25 to-transparent" />
-              </div>
 
               <p>
-                This national and international award-winning documentary offers a visual journey
-                through the legend's music, philosophy, ideas, and inspiration. It portrays the
-                struggle of a woman navigating the socio-economic transformations of India's pre-
-                and post-independence eras — how she upheld her artistic integrity in a
-                male-dominated society and emerged as an enduring example of strength and grace.
-              </p>
+                This nationally and internationally award-winning documentary offers a visual journey through the music, philosophy, ideas, and inspiration of the legendary Girija Devi. More than a musical portrait, it reflects the struggle of a woman navigating the socio-economic transformations of pre- and post-independence India — preserving her artistic integrity within a male-dominated society and emerging as a lasting symbol of strength and grace.</p>
               <p >
-              The film features anecdotes and interviews with stalwarts and legends such as{" "}
-              <span className="text-[#c9a455]/80 font-normal">Ravi Shankar, Kishori Amonkar,
-              Abdul Rashid Khan, Birju Maharaj, Amjad Ali Khan,</span>{" "}
-              and Rajan &amp; Sajan Mishra, among many others — a valuable resource for
-              students, connoisseurs, and lovers of Indian classical music.
+              The film features rare anecdotes and interviews with stalwarts such as Pt. Ravi Shankar, Kishori Amonkar, Ustad Abdul Rashid Khan, Pt. Birju Maharaj, Ustad Amjad Ali Khan, and Pt. Rajan & Sajan Mishra, among many others, making it a valuable resource for students, connoisseurs, and lovers of Indian classical music.
             </p>
               
             </div>
@@ -489,19 +461,10 @@ const About = () => {
             
             <p className="font-playfair italic text-[#f0e6d0]/50 text-[0.9rem] leading-[1.85]
                            border-l-2 border-[#c9a455]/30 pl-4">
-              "We are immensely grateful to the entire team of the film, including{" "}
-              <span className="not-italic font-jost font-light text-[#a08060]">
-                Madhu Chandra and Sudha Datta
-              </span>{" "}
-              as producers; our co-director and editor{" "}
-              <span className="not-italic font-jost font-light text-[#a08060]">Sankalp Meshram</span>;
-              cinematographers{" "}
-              <span className="not-italic font-jost font-light text-[#a08060]">Naiyer Ghufran and Prabal Bose</span>;
-              sound engineer{" "}
-              <span className="not-italic font-jost font-light text-[#a08060]">Partha Sarathi Sanyal</span>;
-              sound mixer{" "}
-              <span className="not-italic font-jost font-light text-[#a08060]">Ajay PB</span>;
-              and many more, for making this dream project a real historical gem."
+              "We are immensely grateful to the entire team of the film, including
+              Madhu Chandra and Sudha Datta as producers; our co-director and editor Sankalp Meshram
+              cinematographers Naiyer Ghufran and Prabal Bose sound engineer Partha Sarathi Sanyal
+              sound mixer Ajay PB and many more, for making this dream project a real historical gem."
               <span className="block mt-2 not-italic font-jost text-[10px] tracking-[0.3em] uppercase
                                text-[#c9a455]/50">
                 — Debapriya Adhikary &amp; Samanwaya Sarkar
@@ -527,7 +490,7 @@ const About = () => {
                 />
               </div>
               <p className="font-jost text-[10px] tracking-[0.35em] uppercase
-                            text-[#a08060]/80 mt-3">
+                            text-[#b8966e]/80 mt-3">
                 Documentary · Girija – A Lifetime in Music
               </p>
             </div>
@@ -613,7 +576,7 @@ const About = () => {
                                              text-[#c9a455] align-middle">★</span>
                           )}
                         </p>
-                        <p className="font-jost font-light text-[0.82rem] text-[#a08060]/55
+                        <p className="font-jost font-light text-[0.82rem] text-[#b8966e]/55
                                      tracking-[0.04em] leading-relaxed">
                           {award.org}
                         </p>
@@ -677,7 +640,7 @@ const About = () => {
                         {f.title}
                       </p>
                       {f.org && (
-                        <p className="font-jost text-[0.78rem] text-[#a08060]/50 leading-relaxed">
+                        <p className="font-jost text-[0.78rem] text-[#b8966e]/50 leading-relaxed">
                           {f.org}
                         </p>
                       )}

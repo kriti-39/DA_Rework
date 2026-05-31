@@ -6,6 +6,6 @@ export default defineConfig({
   server: {
     port: 5174,
     host: true,
-    allowedHosts: ["athletic-enzyme-metadata-amazing.trycloudflare.com"],
+    allowedHosts: true,
   },
 })

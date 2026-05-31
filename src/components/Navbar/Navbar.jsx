@@ -129,14 +129,14 @@ const Navbar = () => {
               <div className={`w-7 h-7 rounded-full border flex items-center justify-center transition-all duration-400 ${
                 audioPlaying
                   ? "border-[#c9a455] bg-[#c9a455] text-[#120a05]"
-                  : "border-[#a08060]/50 text-[#a08060] group-hover:border-[#c9a455] group-hover:text-[#c9a455]"
+                  : "border-[#a08060]/50 text-[#b8966e] group-hover:border-[#c9a455] group-hover:text-[#c9a455]"
               }`}>
                 {audioPlaying
                   ? <FaVolumeUp  className="text-[10px]" />
                   : <FaVolumeMute className="text-[10px]" />
                 }
               </div>
-              <span className="font-jost text-[10px] tracking-[0.2em] uppercase text-[#a08060] group-hover:text-[#c9a455] transition-colors duration-300">
+              <span className="font-jost text-[10px] tracking-[0.2em] uppercase text-[#b8966e] group-hover:text-[#c9a455] transition-colors duration-300">
                 {audioPlaying ? "Pause" : "Listen"}
               </span>
             </button>
@@ -149,7 +149,7 @@ const Navbar = () => {
               className={`w-7 h-7 rounded-full border flex items-center justify-center transition-all duration-300 ${
                 audioPlaying
                   ? "border-[#c9a455] bg-[#c9a455] text-[#120a05]"
-                  : "border-[#a08060]/50 text-[#a08060]"
+                  : "border-[#a08060]/50 text-[#b8966e]"
               }`}
               aria-label="Toggle audio"
             >
@@ -202,7 +202,7 @@ const Navbar = () => {
         )}
       </AnimatePresence>
 
-      <audio ref={audioRef} src="/assets/bgaudio.mp3" loop preload="none" />
+      <audio ref={audioRef} src="/assets/raushan.wav" loop preload="none" />
 
       {/* ── MOBILE DRAWER ─────────────────────────────────────────────────── */}
       <AnimatePresence>
@@ -267,7 +267,7 @@ const Navbar = () => {
                     Connect
                   </span>
                 </a>
-                <p className="font-playfair italic text-[#a08060] text-sm">
+                <p className="font-playfair italic text-[#b8966e] text-sm">
                   Hindustani Classical Vocalist
                 </p>
               </div>

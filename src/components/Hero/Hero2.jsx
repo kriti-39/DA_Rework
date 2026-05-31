@@ -152,7 +152,7 @@ const Hero2 = () => {
             <p className="font-playfair italic text-[#c9a455] text-base md:text-[24px] tracking-wide text-center">
               Singer · Composer · Mentor · Producer
             </p>
-            <p className="font-jost font-light text-[#a08060] text-[16px] tracking-[0.25em] uppercase">
+            <p className="font-jost font-light text-[#b8966e] text-[16px] tracking-[0.25em] uppercase">
               A-Grade Artist · All India Radio &amp; Doordarshan
             </p>
           </motion.div>

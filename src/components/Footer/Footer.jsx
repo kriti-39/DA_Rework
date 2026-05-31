@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { FaSpotify } from "react-icons/fa";
+import { SiLinktree } from "react-icons/si";
 
 // ── NAV LINKS ─────────────────────────────────────────────
 const NAV = [
@@ -42,17 +44,13 @@ const FacebookIcon = () => (
   </svg>
 );
 
-const TwitterIcon = () => (
-  <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-  </svg>
-);
 
 const SOCIALS = [
-  { label: "YouTube",   href: "https://www.youtube.com/@DebapriyaAdhikary", Icon: YouTubeIcon   },
-  { label: "Instagram", href: "#",                                           Icon: InstagramIcon },
-  { label: "Twitter",   href: "#",                                           Icon: TwitterIcon   },
-  { label: "Facebook",  href: "#",                                           Icon: FacebookIcon  },
+  { label: "YouTube",   href: "https://www.youtube.com/@musingswithdeva",          Icon: YouTubeIcon   },
+  { label: "Instagram", href: "https://www.instagram.com/musingswithdeva",          Icon: InstagramIcon },
+  { label: "Spotify",   href: "https://open.spotify.com/artist/46ClZdZ6yv7I0rJVfUONEC?si=WO3ls2_2Sv2GXT1suYY0jw",                                                   Icon: () => <FaSpotify size={17} /> },
+  { label: "Facebook",  href: "https://www.facebook.com/Debapriyaadhikarysings",    Icon: FacebookIcon  },
+  { label: "Linktree",  href: "https://linktr.ee/musingswithdeva",Icon: () => <SiLinktree size={16} /> },
 ];
 
 // ── FOOTER ────────────────────────────────────────────────
@@ -90,14 +88,13 @@ const Footer = () => {
               Debapriya Adhikary
             </h3>
             <p className="font-jost text-[9px] tracking-[0.45em] uppercase text-[#c9a455] mt-1.5">
-              Hindustani Classical Vocalist
+              Artist 
             </p>
           </div>
-          <p className="font-playfair italic text-[#a08060]/80 text-[0.875rem] leading-relaxed">
-            Carrying forward the legacy of the<br />
-            Patiala-Kasur gharana through<br />
-            performance, teaching, &
-            devotion to the raga.
+          <p className="font-playfair italic text-[#b8966e]/80 text-[0.875rem] leading-relaxed">
+            Carrying forward the legacy of the<br/>
+Senia - Banaras Gharana through<br/>
+performance, teaching, & devotion to the music.
           </p>
         </div>
 
@@ -112,7 +109,7 @@ const Footer = () => {
                 key={label}
                 to={to}
                 className="font-jost text-[0.8rem] tracking-[0.08em]
-                           text-[#a08060]/65 hover:text-[#f0e6d0]
+                           text-[#b8966e]/65 hover:text-[#f0e6d0]
                            transition-colors duration-300"
               >
                 {label}
@@ -129,15 +126,15 @@ const Footer = () => {
 
           {/* Email — click opens mail client */}
           <a
-            href="mailto:contact@debapriyaadhikary.com"
+            href="mailto:musingswithdeva@gmail.com"
             className="flex items-center gap-3 group w-fit"
           >
             <span className="text-[#c9a455]/60 group-hover:text-[#c9a455] transition-colors duration-300 flex-none">
               <EmailIcon />
             </span>
-            <span className="font-jost text-[0.88rem] text-[#a08060]/65
+            <span className="font-jost text-[1rem] text-[#b8966e]/65
                              group-hover:text-[#f0e6d0] transition-colors duration-300">
-              contact@debapriyaadhikary.com
+              musingswithdeva@gmail.com
             </span>
           </a>
 
@@ -150,7 +147,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={label}
-                className="text-[#a08060]/45 hover:text-[#c9a455] transition-colors duration-300
+                className="text-[#b8966e]/45 hover:text-[#c9a455] transition-colors duration-300
                            [&>svg]:w-[19px] [&>svg]:h-[19px]"
               >
                 <Icon />
@@ -160,7 +157,7 @@ const Footer = () => {
 
           {/* WhatsApp CTA — replace number below */}
           <a
-            href="https://wa.me/919999999999?text=Hi%2C+I+would+like+to+enquire+about+classes+and+workshops."
+            href="https://wa.me/+919038674555?text=Hi%2C"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2.5 font-jost text-[9.5px]
@@ -170,7 +167,7 @@ const Footer = () => {
                        transition-all duration-300 group"
           >
             <span className="opacity-80"><WhatsAppIcon /></span>
-            Classes &amp; Workshops
+            Connect
             <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
           </a>
         </div>
@@ -181,10 +178,10 @@ const Footer = () => {
       <div className="border-t border-[#c9a455]/10">
         <div className="max-w-[1100px] mx-auto px-8 md:px-16 py-5
                         flex items-center justify-between">
-          <p className="font-jost text-[8px] tracking-[0.3em] uppercase text-[#a08060]/30">
+          <p className="font-jost text-[8px] tracking-[0.3em] uppercase text-[#b8966e]/30">
             © 2025 Debapriya Adhikary. All Rights Reserved.
           </p>
-          <p className="font-jost text-[8px] tracking-[0.25em] uppercase text-[#a08060]/20">
+          <p className="font-jost text-[8px] tracking-[0.25em] uppercase text-[#b8966e]/20">
             Hindustani Classical Music
           </p>
         </div>

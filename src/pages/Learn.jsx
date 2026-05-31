@@ -273,25 +273,22 @@ const Learn = () => {
                 Hindustani Classical Vocal Training
               </p>
 
-              <p className="font-jost font-light text-[#a08060]
+              <p className="font-jost font-light text-[#b8966e]
                             text-[0.88rem] md:text-[0.93rem] leading-[1.9]">
-                Study directly under a{" "}
-                <span className="text-[#c9a455]/80 font-normal">National Award-winning artist</span>{" "}
-                trained under Padma Vibhushan{" "}
-                <span className="text-[#c9a455]/80 font-normal">Dr. Girija Devi</span>{" "}
-                and the masters of India's great gharanas. An unhurried, deeply personal
-                approach — shaped around your voice, your pace, and your artistic vision.
+                Rooted in the timeless traditions of Hindustani classical music, this learning journey offers students the opportunity to train under Debapriya Adhikary — a {" "}
+                <span className="text-[#c9a455]/80 font-normal">National Award-winning artist</span>{" "} and torchbearer of the {" "}
+                <span className="text-[#c9a455]/80 font-normal">Senia - Banaras</span>{" "} tradition. Drawing from the wisdom of India’s great gharanas, the training follows an unhurried and deeply personal approach, shaped around each student’s voice, pace, and artistic growth.
               </p>
             </motion.div>
 
-            {/* 01 · Classes heading */}
+             01 · Classes heading */
             <motion.div
               className="mb-8"
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 1.4 }}
             >
-              <SectionLabel text="01 · Classes" />
+              <SectionLabel text="01 · Regular Classes" />
               <h2 className="font-cinzel font-semibold text-[2rem] md:text-[2.6rem]
                              text-[#f0e6d0] tracking-wide leading-tight mb-2">
                 One-on-One Training
@@ -300,7 +297,7 @@ const Learn = () => {
                 In the living tradition of guru-shishya parampara
               </p>
 
-              <div className="space-y-3 font-jost font-light text-[#a08060]
+              <div className="space-y-3 font-jost font-light text-[#b8966e]
                               text-[0.88rem] md:text-[0.93rem] leading-[1.9] mb-8">
                 <p>
                   Training is offered both{" "}
@@ -335,7 +332,7 @@ const Learn = () => {
                     <span className="text-[#c9a455]/40 text-[7px] mt-[0.42rem] shrink-0">◆</span>
                     <p className="font-jost font-light text-[0.88rem] leading-relaxed">
                       <span className="text-[#f0e6d0]/80 font-normal">{item.label}</span>
-                      <span className="text-[#a08060]/60"> — {item.detail}</span>
+                      <span className="text-[#b8966e]/60"> — {item.detail}</span>
                     </p>
                   </motion.div>
                 ))}
@@ -426,7 +423,7 @@ const Learn = () => {
                     <p className="font-cinzel text-[0.82rem] tracking-wide text-[#c9a455]/65">
                       {g.name}
                     </p>
-                    <p className="font-jost font-light text-[0.78rem] text-[#a08060]/50 leading-relaxed">
+                    <p className="font-jost font-light text-[0.78rem] text-[#b8966e]/50 leading-relaxed">
                       {g.detail}
                     </p>
                   </motion.div>
@@ -464,7 +461,7 @@ const Learn = () => {
             <p className="font-playfair italic text-[#c9a455]/80 text-[1rem] mb-5">
               Deep dives into raga, composition, tala &amp; the philosophy of Hindustani music
             </p>
-            <p className="font-jost font-light text-[#a08060]
+            <p className="font-jost font-light text-[#b8966e]
                           text-[0.88rem] md:text-[0.93rem] leading-[1.9] max-w-2xl">
               Each recording is a complete immersive session — structured for focused study
               and designed to be revisited. Purchase individually and learn at your own pace.
@@ -517,7 +514,7 @@ const Learn = () => {
                                 transition-colors duration-300">
                     {w.title}
                   </p>
-                  <p className="font-playfair italic text-[#a08060]/60 text-[0.76rem]
+                  <p className="font-playfair italic text-[#b8966e]/60 text-[0.76rem]
                                 leading-relaxed mb-3 flex-1">
                     {w.subtitle}
                   </p>
@@ -590,7 +587,7 @@ const Learn = () => {
             <p className="font-playfair italic text-[#c9a455]/80 text-[1rem] mb-4">
               Two ongoing YouTube series — freely available, no enrolment required
             </p>
-            <p className="font-jost font-light text-[#a08060] text-[0.9rem]
+            <p className="font-jost font-light text-[#b8966e] text-[0.9rem]
                           leading-[1.9] max-w-2xl">
               A growing library of recordings for anyone who wishes to listen, observe and absorb.
               Each series has a distinct focus — explore both and find where you wish to begin.
@@ -619,7 +616,7 @@ const Learn = () => {
                                    text-[#f0e6d0]/90 tracking-wide leading-tight mb-1">
                       {series.title}
                     </h3>
-                    <p className="font-playfair italic text-[#a08060]/70 text-[0.85rem]">
+                    <p className="font-playfair italic text-[#b8966e]/70 text-[0.85rem]">
                       {series.subtitle}
                     </p>
                   </div>

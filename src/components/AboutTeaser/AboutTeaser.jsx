@@ -20,19 +20,19 @@ const fadeIn = {
 
 const credentials = [
   {
-    value: "National Film Award",
-    label: "2018 · President of India",
-    sub: "Girija – A Lifetime In Music",
+    value: "President's Award",
+    label: "2002 · All India Radio",
+    sub: "AIR Music Competition",
   },
   {
     value: "A-Grade Artist",
     label: "All India Radio & Doordarshan",
-    sub: "Broadcast excellence",
+    sub: "Khayal - Radio Broadcast",
   },
   {
-    value: "Vocalist · Filmmaker",
-    label: "30+ Years on Stage & Screen",
-    sub: "Composer · Educator · Producer",
+    value: "National Film Award",
+    label: "2018 · President of India",
+    sub: "GIRIJA - A Lifetime in Music",
   },
 ];
 
@@ -91,36 +91,35 @@ const AboutTeaser = () => {
         {/* Bio columns */}
         <div className="grid md:grid-cols-2 gap-10 mb-10">
           <motion.p
-            className="font-jost font-light text-[#a08060] text-sm md:text-[1.1rem] leading-[1.6]"
+            className="font-jost font-light text-[#b8966e] text-sm md:text-[1.1rem] leading-[1.6]"
             variants={fadeUp}
             custom={0.2}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
           >
-            Debapriya Adhikary is one of the foremost voices in contemporary
-            Hindustani classical music — a vocalist whose art carries the quiet
-            weight of a tradition he has spent a lifetime learning and living.
-            His performances move between the intimacy of a late-night riyaz and
-            the commanding presence of a grand concert stage.
+            Debapriya Adhikary is one of the foremost voices in contemporary Hindustani classical music — a torchbearer of the {" "}
+            <em className="text-[#c9a455]/80 not-italic font-normal">
+              Senia - Banaras
+            </em>{" "} tradition and an {" "}
+            <em className="text-[#c9a455]/80 not-italic font-normal">
+              A - Grade Artist of All India Radio
+            </em>{" "}, whose art carries the quiet weight of a tradition he has spent a lifetime learning and living. His performances move between the intimacy of a late-night riyaz and the commanding presence of a grand concert stage.
           </motion.p>
 
           <motion.p
-            className="font-jost font-light text-[#a08060] text-sm md:text-[1.1rem] leading-[1.6]"
+            className="font-jost font-light text-[#b8966e] text-sm md:text-[1.1rem] leading-[1.6]"
             variants={fadeUp}
             custom={0.3}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
           >
-            Beyond music, he is a composer, filmmaker, educator, and producer —
-            a rare polymath of the classical world. His documentary{" "}
+            Beyond music, he is a composer, filmmaker, educator, and producer — a rare polymath of the classical world. His documentary {" "}
             <em className="text-[#c9a455]/80 not-italic font-normal">
               Girija – A Lifetime In Music
-            </em>{" "}
-            earned him the National Film Award in 2018, presented by the
-            President of India, cementing his place as a guardian of living
-            cultural heritage.
+            </em>{" "}earned him the National Film Award in 2018, presented by the President of India, cementing his place as a guardian of living cultural heritage.
+            
           </motion.p>
         </div>
 
@@ -155,7 +154,7 @@ const AboutTeaser = () => {
               <span className="font-jost text-[#f0e6d0]/60 text-[10px] tracking-[0.2em] uppercase">
                 {c.label}
               </span>
-              <span className="font-playfair italic text-[#a08060] text-sm mt-0.5">
+              <span className="font-playfair italic text-[#b8966e] text-sm mt-0.5">
                 {c.sub}
               </span>
             </motion.div>

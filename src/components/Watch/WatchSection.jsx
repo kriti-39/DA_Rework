@@ -6,22 +6,22 @@ const videos = [
   {
     img:   "/assets/T1.jpg",
     url:   "https://youtu.be/8CQZlAVIf10?si=fBEe2krXeXht7zh7",
-    title: "Raga Yaman — Live Performance",
+    title: "Raga Durga - Live Performance",
   },
   {
     img:   "/assets/T2.jpg",
-    url:   "https://youtu.be/zuFMHEKDvIE?si=CWU5Qvq4PPI8m9oC",
-    title: "Girija — A Lifetime In Music",
+    url:   "https://youtu.be/ZVAUejtnaQY?si=p1hlpcQvurIKSmJg",
+    title: "Raushan Raushan",
   },
   {
     img:   "/assets/T3.jpg",
-    url:   "https://youtu.be/sHIBUEBKgR4?si=Uc4iTIQSr39pdMHB",
-    title: "Raga Bhairavi — Sunrise Concert",
+    url:   "https://youtu.be/Wsw3jzqXsag?si=TMWyR1esRuIhFfZb",
+    title: "Miyan Malhar - A Monsoon Treat",
   },
   {
     img:   "/assets/T4.jpg",
-    url:   "https://www.youtube.com/live/aeVKsg_Nccw?si=IRK85ucJFdIENCSY",
-    title: "Thumri — An Evening of Devotion",
+    url:   "https://youtu.be/xUUH27-Nmek?si=ywpsINVj5wE2pZ8E",
+    title: "Raga Marwa - An Evening Charm",
   },
 ];
 
@@ -216,7 +216,7 @@ const WatchSection = () => {
             <h2 className="font-cinzel text-[1.6rem] md:text-[2rem] text-[#f0e6d0] tracking-[0.1em] leading-none mb-2">
               30+ Years On Screen & Stage
             </h2>
-            <p className="font-playfair italic text-[#a08060] text-[18px]">
+            <p className="font-playfair italic text-[#b8966e] text-[18px]">
               Performances · Recordings
             </p>
           </div>

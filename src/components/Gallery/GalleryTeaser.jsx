@@ -161,7 +161,7 @@ const Slider = ({ startIndex, onClose }) => {
                 <p className="font-jost text-[9px] tracking-[0.3em] uppercase text-[#c9a455]/65">
                   {SRCS[curr].caption}
                 </p>
-                <p className="font-jost text-[9px] tracking-[0.2em] text-[#a08060]/40">
+                <p className="font-jost text-[9px] tracking-[0.2em] text-[#b8966e]/40">
                   {curr + 1} / {total}
                 </p>
               </div>
@@ -178,7 +178,7 @@ const Slider = ({ startIndex, onClose }) => {
 
       <button onClick={onClose}
         className="absolute top-7 right-8 z-10 font-jost text-[9px]
-                   tracking-[0.35em] uppercase text-[#a08060]/50
+                   tracking-[0.35em] uppercase text-[#b8966e]/50
                    hover:text-[#c9a455] transition-colors duration-300"
       >Close ✕</button>
     </motion.div>
@@ -216,7 +216,7 @@ const GalleryTeaser = () => {
         <h2 className="font-cinzel text-[2rem] md:text-[2.8rem] text-[#f0e6d0] tracking-wider leading-none mb-4">
           Moments in Music
         </h2>
-        <p className="font-playfair italic text-[#a08060] text-[1rem] md:text-[1.1rem] leading-relaxed">
+        <p className="font-playfair italic text-[#b8966e] text-[1rem] md:text-[1.1rem] leading-relaxed">
           On stage, behind the lens, and in the stillness between notes.
         </p>
       </motion.div>

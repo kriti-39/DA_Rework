@@ -144,7 +144,7 @@ const Gallery = () => {
               <p className="font-playfair italic text-[#c9a455]/60 text-[0.95rem] mb-3">
                 Scroll to journey through performances &amp; sessions
               </p>
-              <p className="font-jost font-light text-[#a08060]/65 text-[0.75rem]
+              <p className="font-jost font-light text-[#b8966e]/65 text-[0.75rem]
                             tracking-[0.1em] leading-relaxed max-w-[240px]">
                 Four decades on stage — concerts, intimate mehfils and studio
                 sessions captured across India and beyond.
@@ -433,7 +433,7 @@ const Gallery = () => {
             <button
               onClick={() => setCarouselIdx(null)}
               className="absolute top-5 right-7 z-10 font-jost text-[9px] tracking-[0.35em]
-                         uppercase text-[#a08060]/50 hover:text-[#c9a455] transition-colors duration-300"
+                         uppercase text-[#b8966e]/50 hover:text-[#c9a455] transition-colors duration-300"
             >Close ✕</button>
           </motion.div>
         )}
@@ -484,7 +484,7 @@ const Gallery = () => {
                 <button
                   onClick={() => setModal(null)}
                   className="font-jost text-[9px] tracking-[0.35em] uppercase
-                             text-[#a08060]/50 hover:text-[#c9a455] transition-colors duration-300"
+                             text-[#b8966e]/50 hover:text-[#c9a455] transition-colors duration-300"
                 >
                   Close ✕
                 </button>

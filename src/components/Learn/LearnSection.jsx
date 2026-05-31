@@ -10,10 +10,9 @@ const workshopVideos = [
 ];
 
 const freeVideos = [
-  { img: "/assets/YT1.jpg", url: "https://youtu.be/eBkjaI4xKws?si=c1gSfrvpS2fp_6MF", title: "Raga Bhimpalasi"    },
-  { img: "/assets/YT2.jpg", url: "https://youtu.be/lLxwR76qgWc?si=sUUmdwuxIhIt0qmo", title: "Raga Todi"        },
-  { img: "/assets/YT3.jpg", url: "https://youtu.be/1X_gCl0fdbw?si=Ea8F2PqNCCTYraZi", title: "Raga Kafi" },
-  { img: "/assets/YT4.jpg", url: "https://youtu.be/z6YQ6oldjwM?si=ysW-LKXwHut5qzDq", title: "Raga Bhairav"  },
+  { img: "/assets/YT1.jpg", url: "https://youtube.com/playlist?list=PLetziL4At--PNAtMyf6naVX5LBZcekg8T&si=0T25gcPDYDCkkZPZ", title: "Raga Shastra"    },
+  { img: "/assets/HL2.jpg", url: "https://youtube.com/playlist?list=PLetziL4At--OuOU3YTJfsNPgi31K4ZY-f&si=8E6RdeZoZHvdWlc2", title: "Sing with Deva"        },
+  { img: "/assets/HL3.jpg", url: "https://youtu.be/9e7cQnlNhl8?si=q_mKythy79wkS9rB", title: "Know Your Voice" },
 ];
 
 // ── PLAY ICON ─────────────────────────────────────────────
@@ -26,7 +25,7 @@ const PlayIcon = () => (
 // ── PANEL CONTENT ─────────────────────────────────────────
 const ClassesContent = () => (
   <div className="pt-6 pb-8 space-y-5">
-    <p className="font-jost font-light text-[#a08060] text-sm md:text-[0.95rem] leading-[1.75] max-w-xl">
+    <p className="font-jost font-light text-[#b8966e] text-sm md:text-[0.95rem] leading-[1.75] max-w-xl">
       Debapriya Adhikary offers one-on-one Hindustani classical vocal training rooted in the
       guru-shishya parampara. Whether you are beginning your first raga or deepening an
       advanced practice, his teaching is patient, rigorous, and deeply personal — shaped
@@ -39,7 +38,7 @@ const ClassesContent = () => (
                  hover:border-[#c9a455] hover:bg-[#c9a455]/5
                  transition-all duration-300 group"
     >
-      Enquire &amp; Join
+      Details
       <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
     </a>
   </div>
@@ -47,10 +46,8 @@ const ClassesContent = () => (
 
 const WorkshopsContent = () => (
   <div className="pt-6 pb-8 space-y-5">
-    <p className="font-jost font-light text-[#a08060] text-sm md:text-[0.95rem] leading-[1.75] max-w-xl">
-      Immersive group workshops exploring specific ragas, layakari, taal, and the living
-      philosophy of Hindustani classical music. Conducted periodically — open to students
-      at every stage. Recordings of past workshops are available for purchase.
+    <p className="font-jost font-light text-[#b8966e] text-sm md:text-[0.95rem] leading-[1.75] max-w-xl">
+      Immersive group workshops exploring voice development, the elements of raag and gayaki, and the rich traditions of purab ang. Conducted periodically and open to students at every stage of learning. Recordings of past workshops are available for purchase.
     </p>
 
     {/* Locked video thumbnails */}
@@ -80,13 +77,13 @@ const WorkshopsContent = () => (
     </div>
 
     <a
-      href="/contact"
+      href="/learn"
       className="inline-flex items-center gap-3 font-jost text-[10px] tracking-[0.3em] uppercase
                  text-[#c9a455] border border-[#c9a455]/40 px-6 py-3
                  hover:border-[#c9a455] hover:bg-[#c9a455]/5
                  transition-all duration-300 group"
     >
-      Buy Workshop Recordings
+      Details
       <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
     </a>
   </div>
@@ -94,7 +91,7 @@ const WorkshopsContent = () => (
 
 const FreeResourcesContent = () => (
   <div className="pt-6 pb-8 space-y-5">
-    <p className="font-jost font-light text-[#a08060] text-sm md:text-[0.95rem] leading-[1.75] max-w-xl">
+    <p className="font-jost font-light text-[#b8966e] text-sm md:text-[0.95rem] leading-[1.75] max-w-xl">
       A growing library of raga explorations, bandish introductions, and musical
       conversations — freely available on YouTube for anyone who wishes to listen and learn.
     </p>
@@ -131,7 +128,7 @@ const FreeResourcesContent = () => (
               </div>
               <div className="absolute inset-0 border border-transparent group-hover:border-[#c9a455]/40 transition-colors duration-300 pointer-events-none" />
             </div>
-            <p className="mt-1.5 font-jost text-[9px] tracking-[0.2em] uppercase text-[#a08060]/60 truncate">
+            <p className="mt-1.5 font-jost text-[9px] tracking-[0.2em] uppercase text-[#b8966e]/60 truncate">
               {v.title}
             </p>
           </a>
@@ -140,13 +137,14 @@ const FreeResourcesContent = () => (
     </div>
 
     <a
-      href="https://www.youtube.com/@DebapriyaAdhikary"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 font-jost text-[9px] tracking-[0.35em] uppercase
-                 text-[#a08060]/50 hover:text-[#c9a455] transition-colors duration-300"
+      href="/contact"
+      className="inline-flex items-center gap-3 font-jost text-[10px] tracking-[0.3em] uppercase
+                 text-[#c9a455] border border-[#c9a455]/40 px-6 py-3
+                 hover:border-[#c9a455] hover:bg-[#c9a455]/5
+                 transition-all duration-300 group"
     >
-      View Full Playlist →
+      Details
+      <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
     </a>
   </div>
 );
@@ -162,13 +160,13 @@ const panels = [
   {
     num:     "02",
     title:   "Workshops",
-    tagline: "Immersive group sessions on raga, composition & philosophy",
+    tagline: "Immersive group sessions on Voice, Raga and Purab Ang",
     content: <WorkshopsContent />,
   },
   {
     num:     "03",
-    title:   "Free Resources",
-    tagline: "Raga explorations freely available on YouTube",
+    title:   "Public Domain Resources",
+    tagline: "Learning Material available on You Tube",
     content: <FreeResourcesContent />,
   },
 ];
@@ -210,7 +208,7 @@ const LearnSection = () => {
       <div className="flex items-start">
 
         {/* ── LEFT — content ───────────────────────── */}
-        <div className="w-[65%] shrink-0 px-8 md:px-16 lg:px-20 pt-16 md:pt-32 pb-20 md:pb-32 min-h-screen">
+        <div className="w-[60%] shrink-0 px-8 md:px-24 lg:px-28 pt-16 md:pt-32 pb-20 md:pb-32 min-h-screen">
 
           {/* Section header */}
           <motion.div
@@ -229,7 +227,7 @@ const LearnSection = () => {
             <h2 className="font-cinzel text-[2rem] md:text-[2.8rem] text-[#f0e6d0] tracking-wider leading-none mb-4">
               Study the Art
             </h2>
-            <p className="font-playfair italic text-[#a08060] text-[1rem] md:text-[1.1rem] leading-relaxed max-w-xl">
+            <p className="font-playfair italic text-[#b8966e] text-[1rem] md:text-[1.1rem] leading-relaxed max-w-xl">
               Explore your path into Hindustani Classical Music, from a personal mentorship
               to a free library open to all.
             </p>
@@ -263,7 +261,7 @@ const LearnSection = () => {
                       {panel.title}
                     </h3>
                     <p className={`font-playfair italic text-sm transition-colors duration-300 ${
-                      active === i ? "text-[#c9a455]/60" : "text-[#a08060]/50"
+                      active === i ? "text-[#c9a455]/60" : "text-[#b8966e]/50"
                     }`}>
                       {panel.tagline}
                     </p>
