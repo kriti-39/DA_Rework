@@ -90,7 +90,7 @@ const FELLOWSHIPS = [
 
 const AFFILIATIONS = [
   "Member, Indian Council for Cultural Relations (ICCR)",
-  "Diploma in Personal Fitness Training & Certified Nutritionist (2021)",
+  "Diploma in Personal Fitness Training & Certified Nutritionist",
   "Associate Certified Pranic Healer",
 ];
 
@@ -798,11 +798,7 @@ He holds a Master’s degree in Music and was awarded the Junior Research Fellow
           </div>
         </div>
 
-        {/* Hint */}
-        <p className="text-center font-jost text-[10px] tracking-[0.45em] uppercase
-                      text-[#c9a455]/30 mt-8">
-          Hover to pause · Click to view
-        </p>
+       
       </section>
 
       {/* ── LIGHTBOX — blur + zoom + prev/next ── */}

@@ -3,14 +3,22 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const SRCS = [
-  { src: "/assets/DSC05188.JPG.jpeg", caption: "On Stage · Mumbai"       },
-  { src: "/assets/DSC05244.JPG.jpeg", caption: "Riyaz Session · Kolkata" },
-  { src: "/assets/IMG_0369.JPG.jpeg", caption: "Backstage · Varanasi"    },
-  { src: "/assets/h3.png",            caption: "Concert · New Delhi"      },
-  { src: "/assets/h6.png",            caption: "Studio · Pune"            },
-  { src: "/assets/YT1.jpg",           caption: "Live Performance"          },
-  { src: "/assets/YT2.jpg",           caption: "Raga Recording"            },
-  { src: "/assets/YT3.jpg",           caption: "Workshop Session"          },
+  { src: "/assets/hv1.jpg",   },  // 0  V
+  { src: "/assets/hv2.jpg",  },  // 1  V
+  { src: "/assets/hv3.jpeg",  },  // 2  V
+  { src: "/assets/hv4.jpg",   },
+  { src: "/assets/hv5.jpg",   },  // 7  V
+  { src: "/assets/new13.jpeg",    },  // 8  V
+  { src: "/assets/vertical.jpeg",  },  // 9  V
+  { src: "/assets/hv8.jpg",    },
+   { src: "/assets/hv9.jpeg",  },  // 11 V
+  { src: "/assets/hv10.jpg",  },  // 12 V
+  { src: "/assets/v8.jpeg",   },  // 13 V  ⚠ add hv11
+  { src: "/assets/hv16.jpeg",  },
+  { src: "/assets/hv13.jpeg",   },  // 18 V  ⚠ add hv13
+  { src: "/assets/hv12.jpeg",   },  // 19 V  ⚠ add hv14
+  { src: "/assets/hv15.jpeg",  },  // 20 V  ⚠ add hv15
+  { src: "/assets/hv14.jpeg",  },
 ];
 
 // ── LIGHTBOX ──────────────────────────────────────────────
@@ -144,7 +152,7 @@ const GalleryTeaserMobile = () => {
                 src={item.src}
                 alt={item.caption}
                 className="w-full h-full object-cover"
-                style={{ filter: "brightness(0.68) sepia(0.10)" }}
+                style={{ filter: "brightness(0.85)" }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0c0702]/75 to-transparent" />
               <p className="absolute bottom-2 left-2 right-2 font-jost text-[7px] tracking-[0.18em] uppercase text-[#c9a455]/70 truncate">

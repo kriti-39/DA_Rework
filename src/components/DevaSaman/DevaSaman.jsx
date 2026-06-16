@@ -61,7 +61,7 @@ const DevaSaman = () => {
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
           >
-          <SectionLabel text="Brotherhood" />
+          <SectionLabel text="Musical Brotherhood" />
 
           <h2
             className="font-cinzel font-semibold

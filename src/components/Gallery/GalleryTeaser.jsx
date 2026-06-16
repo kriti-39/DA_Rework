@@ -3,15 +3,37 @@ import { motion, AnimatePresence, useScroll, useTransform, useSpring } from "fra
 import { Link } from "react-router-dom";
 
 // ── IMAGE SOURCES ─────────────────────────────────────────
+// idx order MUST match the LEFT/RIGHT layout below.
+//   V = vertical slot (portrait) · H = horizontal slot (landscape)
 const SRCS = [
-  { src: "/assets/DSC05188.JPG.jpeg", caption: "On Stage · Mumbai"       },
-  { src: "/assets/DSC05244.JPG.jpeg", caption: "Riyaz Session · Kolkata" },
-  { src: "/assets/IMG_0369.JPG.jpeg", caption: "Backstage · Varanasi"    },
-  { src: "/assets/h3.png",            caption: "Concert · New Delhi"      },
-  { src: "/assets/h6.png",            caption: "Studio · Pune"            },
-  { src: "/assets/YT1.jpg",           caption: "Live Performance"          },
-  { src: "/assets/YT2.jpg",           caption: "Raga Recording"            },
-  { src: "/assets/YT3.jpg",           caption: "Workshop Session"          },
+  // ── LEFT row1 — vertical ──
+  { src: "/assets/hv1.jpg",   caption: "Moments in Music" },  // 0  V
+  { src: "/assets/hv2.jpg",   caption: "Moments in Music" },  // 1  V
+  { src: "/assets/hv3.jpeg",  caption: "Moments in Music" },  // 2  V
+  { src: "/assets/hv4.jpg",   caption: "Moments in Music" },  // 3  V
+  // ── LEFT row2 — horizontal ──
+  { src: "/assets/hh3.jpg",   caption: "Moments in Music" },  // 4  H
+  { src: "/assets/hh2.jpg",   caption: "Moments in Music" },  // 5  H
+  { src: "/assets/hh1.jpg",   caption: "Moments in Music" },  // 6  H
+  // ── LEFT row3 — vertical ──
+  { src: "/assets/hv5.jpg",   caption: "Moments in Music" },  // 7  V
+  { src: "/assets/new13.jpeg",   caption: "Moments in Music" },  // 8  V
+  { src: "/assets/vertical.jpeg",   caption: "Moments in Music" },  // 9  V
+  { src: "/assets/hv8.jpg",   caption: "Moments in Music" },  // 10 V
+  // ── RIGHT row1 — vertical ──
+  { src: "/assets/hv9.jpeg",  caption: "Moments in Music" },  // 11 V
+  { src: "/assets/hv10.jpg",  caption: "Moments in Music" },  // 12 V
+  { src: "/assets/v8.jpeg",  caption: "Moments in Music" },  // 13 V  ⚠ add hv11
+  { src: "/assets/hv16.jpeg", caption: "Moments in Music" },  // 14 V
+  // ── RIGHT row2 — horizontal ──
+  { src: "/assets/hh4.jpg",   caption: "Moments in Music" },  // 15 H
+  { src: "/assets/hh5.jpg",   caption: "Moments in Music" },  // 16 H
+  { src: "/assets/concert.jpeg",   caption: "Moments in Music" },  // 17 H
+  // ── RIGHT row3 — vertical ──
+  { src: "/assets/hv13.jpeg",  caption: "Moments in Music" },  // 18 V  ⚠ add hv13
+  { src: "/assets/hv12.jpeg",  caption: "Moments in Music" },  // 19 V  ⚠ add hv14
+  { src: "/assets/hv15.jpeg",  caption: "Moments in Music" },  // 20 V  ⚠ add hv15
+  { src: "/assets/hv14.jpeg",  caption: "Moments in Music" },  // 21 V  ⚠ add hv16
 ];
 
 // ── LAYOUT CONSTANTS ──────────────────────────────────────
@@ -19,7 +41,10 @@ const PW = 118;  // portrait card width
 const LW = 160;  // landscape card width  (3 × LW + 2 × 9 ≈ 4 × PW + 3 × 9)
 const G  = 9;    // gap between cards
 
-// ── LAYOUT CONFIG — idx references SRCS (duplicates ok) ──
+// ── LAYOUT CONFIG — each idx is UNIQUE → maps to one SRCS image ──
+// SRCS index map (edit the image by changing SRCS[idx]):
+//   LEFT  row1: 0,1,2,3    row2: 4,5,6      row3: 7,8,9,10
+//   RIGHT row1: 11,12,13,14 row2: 15,16,17  row3: 18,19,20,21
 const LEFT = {
   // jagged top — bottom edges aligned, heights vary
   row1: [
@@ -30,36 +55,36 @@ const LEFT = {
   ],
   // three horizontal frames
   row2: [
+    { idx: 4, w: LW, h: 108 },
     { idx: 5, w: LW, h: 108 },
     { idx: 6, w: LW, h: 108 },
-    { idx: 7, w: LW, h: 108 },
   ],
   // jagged bottom — top edges aligned, heights vary
   row3: [
-    { idx: 3, w: PW, h: 148 },
-    { idx: 0, w: PW, h: 202 },
-    { idx: 1, w: PW, h: 172 },
-    { idx: 2, w: PW, h: 190 },
+    { idx: 7,  w: PW, h: 148 },
+    { idx: 8,  w: PW, h: 202 },
+    { idx: 9,  w: PW, h: 172 },
+    { idx: 10, w: PW, h: 190 },
   ],
 };
 
 const RIGHT = {
   row1: [
-    { idx: 4, w: PW, h: 150 },
-    { idx: 5, w: PW, h: 210 },
-    { idx: 6, w: PW, h: 170 },
-    { idx: 7, w: PW, h: 198 },
+    { idx: 11, w: PW, h: 150 },
+    { idx: 12, w: PW, h: 210 },
+    { idx: 13, w: PW, h: 170 },
+    { idx: 14, w: PW, h: 198 },
   ],
   row2: [
-    { idx: 0, w: LW, h: 108 },
-    { idx: 2, w: LW, h: 108 },
-    { idx: 4, w: LW, h: 108 },
+    { idx: 15, w: LW, h: 108 },
+    { idx: 16, w: LW, h: 108 },
+    { idx: 17, w: LW, h: 108 },
   ],
   row3: [
-    { idx: 5, w: PW, h: 200 },
-    { idx: 6, w: PW, h: 158 },
-    { idx: 7, w: PW, h: 195 },
-    { idx: 4, w: PW, h: 165 },
+    { idx: 18, w: PW, h: 200 },
+    { idx: 19, w: PW, h: 158 },
+    { idx: 20, w: PW, h: 195 },
+    { idx: 21, w: PW, h: 165 },
   ],
 };
 
@@ -98,8 +123,8 @@ const PhotoCard = ({ idx, w, h, onOpen }) => {
           className="w-full h-full object-cover"
           style={{
             filter: hov
-              ? "brightness(0.88) sepia(0.04)"
-              : "brightness(0.62) sepia(0.15)",
+              ? "brightness(1.05)"
+              : "brightness(0.85)",
             transform: hov ? "scale(1.06)" : "scale(1)",
             transition: "filter 0.4s ease, transform 0.5s ease",
           }}

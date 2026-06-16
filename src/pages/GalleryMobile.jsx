@@ -3,14 +3,13 @@ import { motion, AnimatePresence } from "framer-motion";
 
 // ── VIDEO CARDS ────────────────────────────────────────────
 const CARDS = [
-  { img: "/assets/YT1.jpg", title: "Raga Bhimpalasi",      ytId: "eBkjaI4xKws" },
-  { img: "/assets/YT2.jpg", title: "Raga Todi",            ytId: "lLxwR76qgWc" },
-  { img: "/assets/YT3.jpg", title: "Raga Kafi",            ytId: "1X_gCl0fdbw" },
-  { img: "/assets/YT4.jpg", title: "Raga Bhairav",         ytId: "z6YQ6oldjwM" },
-  { img: "/assets/T1.jpg",  title: "Raga Yaman Workshop",  ytId: null           },
-  { img: "/assets/T2.jpg",  title: "Bhairavi Masterclass", ytId: null           },
-  { img: "/assets/T3.jpg",  title: "Thumri & Dadra",       ytId: null           },
-  { img: "/assets/T4.jpg",  title: "Sur & Laya Session",   ytId: null           },
+  { img: "/assets/GP1.jpg", title: "Raga Marwa — Live",             ytId: "xUUH27-Nmek" },
+  { img: "/assets/GP2.jpg", title: "Music Within You · Podcast 9",  ytId: "GAtaKM5cdls" },
+  { img: "/assets/GP3.jpg", title: "Raag Narayani — Live",          ytId: "eXJqciLgiN4" },
+  { img: "/assets/GP4.jpg", title: "Nayaki Kanada & Bhairavi Tappa", ytId: "5moZaklCqsM" },
+  { img: "/assets/GP5.jpg", title: "Appaji Teaching — Girija Devi", ytId: "EpOBt_Rubfk" },
+  { img: "/assets/GP6.jpg", title: "Meera Bhajan — St. Petersburg", ytId: "Q1fFddUjgtY" },
+  { img: "/assets/GP7.jpg", title: "Dadra — Live",                  ytId: "sHIBUEBKgR4" },
 ];
 
 // ── PHOTO CAROUSEL ─────────────────────────────────────────

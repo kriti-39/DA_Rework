@@ -3,14 +3,13 @@ import { motion, useScroll, useTransform, useSpring, AnimatePresence } from "fra
 
 // ── CARDS ─────────────────────────────────────────────────────────────────────
 const CARDS = [
-  { img: "/assets/YT1.jpg", title: "Raga Bhimpalasi",      ytId: "eBkjaI4xKws" },
-  { img: "/assets/YT2.jpg", title: "Raga Todi",            ytId: "lLxwR76qgWc" },
-  { img: "/assets/YT3.jpg", title: "Raga Kafi",            ytId: "1X_gCl0fdbw" },
-  { img: "/assets/YT4.jpg", title: "Raga Bhairav",         ytId: "z6YQ6oldjwM" },
-  { img: "/assets/T1.jpg",  title: "Raga Yaman Workshop",  ytId: null           },
-  { img: "/assets/T2.jpg",  title: "Bhairavi Masterclass", ytId: null           },
-  { img: "/assets/T3.jpg",  title: "Thumri & Dadra",       ytId: null           },
-  { img: "/assets/T4.jpg",  title: "Sur & Laya Session",   ytId: null           },
+  { img: "/assets/GP1.jpg", title: "Raga Marwa — Live",             ytId: "xUUH27-Nmek" },
+  { img: "/assets/GP2.jpg", title: "Music Within You · Podcast 9",  ytId: "GAtaKM5cdls" },
+  { img: "/assets/GP3.jpg", title: "Raag Narayani — Live",          ytId: "eXJqciLgiN4" },
+  { img: "/assets/GP4.jpg", title: "Nayaki Kanada & Bhairavi Tappa", ytId: "5moZaklCqsM" },
+  { img: "/assets/GP5.jpg", title: "Appaji Teaching — Girija Devi", ytId: "EpOBt_Rubfk" },
+  { img: "/assets/GP6.jpg", title: "Meera Bhajan — St. Petersburg", ytId: "Q1fFddUjgtY" },
+  { img: "/assets/GP7.jpg", title: "Dadra — Live",                  ytId: "sHIBUEBKgR4" },
 ];
 
 // ── CYLINDER CONSTANTS ────────────────────────────────────────────────────────
@@ -47,17 +46,17 @@ const RIGHT_IMGS = [
 // ── CAROUSEL — infinite strip below the ending quote ─────────────────────────
 const C_GAP = 12;   // px gap between items
 const CAROUSEL_IMGS = [
-  { src: "/assets/AG1.jpg",   w: 148, h: 218 },  // portrait
-  { src: "/assets/AG3.jpg",   w: 200, h: 136 },  // landscape
-  { src: "/assets/AG5.jpg",   w: 148, h: 195 },  // portrait
-  { src: "/assets/AG2.jpeg",  w: 212, h: 146 },  // landscape
+  { src: "/assets/AG7.jpg",   w: 148, h: 218 },  // portrait
+  { src: "/assets/AG5.jpg",   w: 200, h: 136 },  // landscape
+  { src: "/assets/AG2.jpeg",   w: 148, h: 195 },  // portrait
+  { src: "/assets/AG1.jpg",  w: 212, h: 146 },  // landscape
   { src: "/assets/GI1.jpeg",  w: 148, h: 240 },  // portrait tall
-  { src: "/assets/AG4.jpg",   w: 182, h: 130 },  // landscape compact
-  { src: "/assets/AG6.jpg",   w: 148, h: 218 },  // portrait
-  { src: "/assets/GI2.jpeg",  w: 205, h: 142 },  // landscape
-  { src: "/assets/AG7.jpg",   w: 148, h: 180 },  // portrait short
-  { src: "/assets/T1.jpg",    w: 196, h: 136 },  // landscape
-  { src: "/assets/T2.jpg",    w: 148, h: 220 },  // portrait
+  { src: "/assets/T1.jpg",   w: 182, h: 130 },  // landscape compact
+  { src: "/assets/new1.jpeg",   w: 148, h: 218 },  // portrait
+  { src: "/assets/GP1.jpg",  w: 205, h: 142 },  // landscape
+  { src: "/assets/vertical.jpeg",   w: 148, h: 180 },  // portrait short
+  { src: "/assets/concert.jpeg",    w: 196, h: 136 },  // landscape
+  { src: "/assets/AG4.jpg",    w: 148, h: 220 },  // portrait
   { src: "/assets/T3.jpg",    w: 208, h: 148 },  // landscape
 ];
 // single-copy track width = sum of widths + n gaps (so duplicate loops seamlessly)
@@ -144,11 +143,7 @@ const Gallery = () => {
               <p className="font-playfair italic text-[#c9a455]/60 text-[0.95rem] mb-3">
                 Scroll to journey through performances &amp; sessions
               </p>
-              <p className="font-jost font-light text-[#b8966e]/65 text-[0.75rem]
-                            tracking-[0.1em] leading-relaxed max-w-[240px]">
-                Four decades on stage — concerts, intimate mehfils and studio
-                sessions captured across India and beyond.
-              </p>
+              
             </div>
           </motion.div>
 

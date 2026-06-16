@@ -12,8 +12,8 @@ const WHAT_YOU_LEARN = [
 ];
 
 const GURUS = [
-  { name: "Dr. Girija Devi",            detail: "Padma Vibhushan · Benaras Gharana · 11 years" },
   { name: "Pt. Samaresh Chawdhury",     detail: "Senia & Maihar Gharanas · 14 years" },
+  { name: "Dr. Girija Devi",            detail: "Padma Vibhushan · Benaras Gharana · 11 years" },
   { name: "Pt. Kumar Prasad Mukherjee", detail: "Agra & Rampur-Sahaswan traditions" },
   { name: "Pt. Vijay Kichlu",           detail: "Agra Gharana" },
   { name: "Pt. Uday Bhawalkar",         detail: "Dhrupad tradition · ongoing" },
@@ -35,6 +35,8 @@ const YT_SERIES = [
     seriesLabel: "Series 01",
     title:       "Raga Shastra",
     subtitle:    "An in-depth exploration of ragas — grammar, history and emotional essence",
+    description:
+      "In this series, a wide range of ragas from Hindustani Shastriya Sangeet are explored in depth with Debapriya Adhikary, who takes listeners on an immersive musical journey. Following the principles of Ashtaang Gayaki, he carefully explains each aspect of raga presentation, including its structure, mood, and expression, supported by detailed demonstrations in Vilambit and/or Drut compositions. This initiative is a sincere effort to document the richness and diversity of ragas, preserving their essence for future generations. By breaking down complex concepts into accessible insights, the series serves as both an educational resource and a valuable archive for students, practitioners, and connoisseurs of Indian classical music.",
     playlistUrl: "https://www.youtube.com/@DebapriyaAdhikary",
     videos: [
       { img: "/assets/YT1.jpg", title: "Raga Bhimpalasi", url: "https://youtu.be/eBkjaI4xKws?si=c1gSfrvpS2fp_6MF" },
@@ -47,12 +49,14 @@ const YT_SERIES = [
     seriesLabel: "Series 02",
     title:       "Learn Hindustani Classical Vocal Online",
     subtitle:    "Structured lessons for aspiring singers — from foundational sur to raga study",
+    description:
+      "Debapriya Adhikary offers thoughtfully designed online vocal tutorials that focus on various aspects of Hindustani classical music. These include voice culture, raga understanding, and the finer elements of gayaki, presented in a clear and structured manner to benefit learners at different stages of their musical journey.",
     playlistUrl: "https://www.youtube.com/@DebapriyaAdhikary",
     videos: [
-      { img: "/assets/YT1.jpg", title: "Lesson 01 · Sur & Swara",  url: "#" },
-      { img: "/assets/YT2.jpg", title: "Lesson 02 · Alankaar",     url: "#" },
-      { img: "/assets/YT3.jpg", title: "Lesson 03 · Raga Grammar", url: "#" },
-      { img: "/assets/YT4.jpg", title: "Lesson 04 · Bandish",      url: "#" },
+      { img: "/assets/SWD1.jpg", title: "Breathing Technique",   url: "https://youtu.be/AFONjmJuNko?si=HtZNZCG9KFLDB2TW" },
+      { img: "/assets/SWD2.jpg", title: "How to Practice?",      url: "https://youtu.be/pcX88ZghBSk?si=DZUOFAz2QEgNiVH_" },
+      { img: "/assets/SWD3.jpg", title: "Raga Bhupali / Bhoop",  url: "https://youtu.be/wVmuJbYiVIk?si=O2XTD4a4JUVznN_E" },
+      { img: "/assets/SWD4.jpg", title: "Khamaj & Nuances",      url: "https://youtu.be/ZH_XQMnegKU?si=yj4g_1_uC3Fv-zLA" },
     ],
   },
 ];
@@ -233,10 +237,24 @@ const LearnMobile = () => (
         <p className="font-playfair italic text-[#c9a455]/80 text-[0.95rem] mb-3">
           Deep dives into raga, composition, tala &amp; the philosophy of Hindustani music
         </p>
-        <p className="font-jost font-light text-[#b8966e] text-sm leading-[1.9]">
-          Each recording is a complete immersive session — designed to be revisited.
-          Purchase individually and learn at your own pace.
-        </p>
+        <div className="font-jost font-light text-[#b8966e] text-sm leading-[1.9] space-y-3">
+          <p>
+            Debapriya Adhikary conducts in-depth workshops designed to provide a
+            comprehensive understanding of Hindustani classical vocal music. These
+            sessions focus on strengthening the voice, improving tonal quality, and
+            developing control through systematic practice techniques. Special
+            emphasis is given to paltas, breath control, and building a strong
+            foundation essential for advanced musical expression.
+          </p>
+          <p>
+            The workshops also explore key elements of gayaki, including bandish
+            development, tappa, and stylistic nuances across forms. Through detailed
+            explanations, demonstrations, and interactive learning, participants gain
+            practical insights into both the technical and aesthetic aspects of music,
+            making these workshops enriching for students, performers, and enthusiasts
+            alike.
+          </p>
+        </div>
       </motion.div>
 
       {/* 2-col workshop grid */}
@@ -339,6 +357,13 @@ const LearnMobile = () => (
                 View Full Playlist →
               </a>
             </div>
+
+            {/* Series description */}
+            {series.description && (
+              <p className="font-jost font-light text-[#b8966e] text-[0.82rem] leading-[1.85] mb-5">
+                {series.description}
+              </p>
+            )}
 
             {/* 2-col thumbnails */}
             <div className="grid grid-cols-2 gap-3">
