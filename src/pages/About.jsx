@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useTransform, useSpring, AnimatePresence } from "framer-motion";
 import DevaSaman from "../components/DevaSaman/DevaSaman";
+import Gurus from "../components/Gurus/Gurus";
 
 // ── GOLDEN WAVES (same as Hero) ───────────────────────────
 const GoldenWaves = () => {
@@ -73,12 +74,12 @@ const GoldenWaves = () => {
 const AWARDS = [
   { year: "1994",    title: "First Prize · Inter District Music Competition",         org: "Dhanbad",                                                                  highlight: false },
   { year: "2001",    title: "First Prize · Akhil Bharatiya Sangeet Pratiyogita",      org: "Prayag Sangeet Samiti, Allahabad",                                          highlight: false },
-  { year: "2001–02", title: "Inter College & East Zonal Youth Festival",              org: "AIU, Govt. of India · Vinoba Bhave University & ISM Dhanbad",               highlight: false },
-  { year: "2002",    title: "All India Radio National Music Competition",              org: "Award conferred on behalf of the President of India",                       highlight: true  },
+  { year: "2001–02", title: "First Prize · Inter College & East Zonal Youth Festival",              org: "AIU, Govt. of India · Vinoba Bhave University & ISM Dhanbad",               highlight: false },
+  { year: "2002",    title: " PRESIDENT'S AWARD - AIR NATIONAL MUSIC COMPETITION",              org: "First prize conferred on behalf of President of India",                       highlight: true  },
   { year: "2003",    title: "ITC–SRA Promising Artiste Award",                        org: "ITC–Sangeet Research Academy, Mumbai",                                      highlight: false },
   { year: "2004",    title: "Golden Talent Contest",                                  org: "Pandit Ravi Kichlu Foundation",                                             highlight: false },
   { year: "2006",    title: "Master of Music · Topper",                            org: "University of Calcutta",                                                    highlight: false },
-  { year: "2018",    title: "National Film Award",                                    org: "Conferred by the Hon'ble President of India · Girija – A Lifetime in Music", highlight: true  },
+  { year: "2018",    title: "National Film Award - Best Documentary",                                    org: "Conferred by the Hon'ble President of India · Girija – A Lifetime in Music", highlight: true  },
   { year: "2019",    title: "Person Who Cares for Art of the East",                   org: "Sharq Taronalari International Music Festival · UNESCO & Ministry of Culture, Govt. of Uzbekistan", highlight: false },
 ];
 
@@ -99,11 +100,11 @@ const AFFILIATIONS = [
 const GALLERY_IMGS = [
   "/assets/AG1.jpg",
   "/assets/AG2.jpeg",
-  "/assets/AG3.jpg",
+  "/assets/hh1.jpg",
   "/assets/AG4.jpg",
-  "/assets/AG5.jpg",
-  "/assets/AG6.jpg",
-  "/assets/AG7.jpg",
+  "/assets/new27.jpeg",
+  "/assets/new26.jpeg",
+  "/assets/new22.jpeg",
 ];
 // Doubled so the loop is seamless: translateX(-50%) scrolls exactly one full set
 const MARQUEE_IMGS = [...GALLERY_IMGS, ...GALLERY_IMGS];
@@ -355,7 +356,14 @@ He holds a Master’s degree in Music and was awarded the Junior Research Fellow
         </div>
       </section>
 
-      <Divider />
+      
+
+      {/* ══════════════════════════════════════════════════
+          GURUS — circular portrait row
+      ══════════════════════════════════════════════════ */}
+      <Gurus />
+
+    
 
       {/* ══════════════════════════════════════════════════
           BROTHERHOOD — DevaSaman duo section
@@ -407,17 +415,17 @@ He holds a Master’s degree in Music and was awarded the Junior Research Fellow
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
           >
-            <SectionLabel text="The Torchbearer" />
+            <SectionLabel text="THE AWARD - WINNING DOCUMENTARY" />
 
             <h2 className="font-cinzel font-semibold
                            text-[2rem] md:text-[2.6rem] lg:text-[3rem]
                            text-[#f0e6d0] tracking-wide leading-tight mb-2">
-              Padma Vibhushan Girija Devi
+              GIRIJA - <br></br>A LIFETIME IN MUSIC
             </h2>
 
             <p className="font-playfair italic text-[#c9a455]/80
                           text-[0.95rem] md:text-[1.05rem] tracking-wide mb-5">
-              Thumri Queen ·  Gurumaa
+              Tribute to Gurumaa, the Thumri Queen
             </p>
 
             <div className="space-y-5 font-jost font-light text-[#b8966e]

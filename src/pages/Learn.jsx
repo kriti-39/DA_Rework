@@ -62,62 +62,12 @@ const GURUS = [
 ];
 
 const WORKSHOPS = [
-  {
-    img: "/assets/T1.jpg",
-    title: "Raga Yaman",
-    subtitle: "An evening raga — alaap, jod and khayal bandish",
-    tags: ["Beginner Friendly", "2 hr Session"],
-    url: "#",
-  },
-  {
-    img: "/assets/T2.jpg",
-    title: "Bhairavi Masterclass",
-    subtitle: "The raga of farewell — grammar, ornamentation and thumri",
-    tags: ["Intermediate", "3 hr Session"],
-    url: "#",
-  },
-  {
-    img: "/assets/T3.jpg",
-    title: "Thumri & Dadra",
-    subtitle: "Light classical forms — emotion, text and improvisation",
-    tags: ["2 yr+ Trained", "2 hr Session"],
-    url: "#",
-  },
-  {
-    img: "/assets/T4.jpg",
-    title: "Sur & Laya",
-    subtitle: "Melody and rhythm in dialogue — layakari and tala",
-    tags: ["All Levels", "1.5 hr Session"],
-    url: "#",
-  },
-  {
-    img: "/assets/YT1.jpg",
-    title: "Raga Bhimpalasi",
-    subtitle: "An afternoon raga of longing — detailed raga study",
-    tags: ["Intermediate", "2 hr Session"],
-    url: "#",
-  },
-  {
-    img: "/assets/YT2.jpg",
-    title: "Khayal Bandish",
-    subtitle: "Rare compositions from the Benaras and Senia traditions",
-    tags: ["5 yr+ Trained", "3 hr Session"],
-    url: "#",
-  },
-  {
-    img: "/assets/YT3.jpg",
-    title: "Voice & Swara",
-    subtitle: "Swara placement, shruti sensitivity and resonance training",
-    tags: ["All Levels", "2 hr Session"],
-    url: "#",
-  },
-  {
-    img: "/assets/YT4.jpg",
-    title: "Raga Darbari",
-    subtitle: "A late-night raga — meditative, profound, profound",
-    tags: ["5 yr+ Trained", "2.5 hr Session"],
-    url: "#",
-  },
+  { img: "/assets/workshop1.png", title: "Strengthen Your Voice With Deva",                  subtitle: "7 days extensive workshop",  url: "https://musingswithdeva.gumroad.com/l/voice",  tags: ["Beginner Friendly", "11 hr"] },
+  { img: "/assets/workshop2.png", title: "Strengthen Your Voice With Deva",                  subtitle: "3 days workshop on Palta",   url: "https://musingswithdeva.gumroad.com/l/palta",  tags: ["Beginner Friendly", "4 hr 20 min"] },
+  { img: "/assets/workshop3.png", title: "Strengthen Your Voice With Deva",                  subtitle: "Transform your voice",       url: "https://musingswithdeva.gumroad.com/l/syv3",   tags: ["Beginner Friendly", "~4 hr"] },
+  { img: "/assets/workshop4.png", title: "Morning Riyaz with Guruji",                        subtitle: "",                           url: "https://musingswithdeva.gumroad.com/l/riyaz",  tags: ["Beginner Friendly", "2 hr 43 min"] },
+  { img: "/assets/workshop5.png", title: "An Immersive Journey into Thumri, Kajri and Jhula", subtitle: "",                          url: "https://musingswithdeva.gumroad.com/l/thumri", tags: ["Beginner Friendly", "3 hr 15 min"] },
+  { img: "/assets/workshop6.png", title: "Art of Bandish Gayaki",                            subtitle: "Raga: Bhimpalash",          url: "https://musingswithdeva.gumroad.com/l/gayaki", tags: ["Beginner Friendly", "2 hr 25 min"] },
 ];
 
 const YT_SERIES = [
@@ -466,7 +416,7 @@ Rather than following a rigid syllabus, the learning unfolds organically — gui
 
               {/* WhatsApp Enquire Now */}
               <motion.a
-                href="https://wa.me/919999999999"
+                href="https://wa.me/+917003886380?text=Namaskar%2C%20I%20wish%20to%20enquire%20about%20learning%20sessions%20with%20Debapriya%20Ji."
                 target="_blank"
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 16 }}
@@ -669,8 +619,8 @@ Rather than following a rigid syllabus, the learning unfolds organically — gui
             </div>
           </motion.div>
 
-          {/* 4×2 Workshop Grid */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+          {/* 3×2 Workshop Grid */}
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
             {WORKSHOPS.map((w, i) => (
               <motion.a
                 key={i}
@@ -689,14 +639,14 @@ Rather than following a rigid syllabus, the learning unfolds organically — gui
                   delay: i * 0.06,
                 }}
               >
-                {/* Thumbnail */}
+                {/* Thumbnail — name is printed on the image */}
                 <div className="relative aspect-video overflow-hidden shrink-0">
                   <img
                     src={w.img}
                     alt={w.title}
                     className="w-full h-full object-cover transition-transform duration-500
                                group-hover:scale-[1.06]"
-                    style={{ filter: "brightness(0.50) sepia(0.18)" }}
+                    style={{ filter: "brightness(0.92)" }}
                   />
                   {/* Buy overlay on hover */}
                   <div
@@ -723,15 +673,17 @@ Rather than following a rigid syllabus, the learning unfolds organically — gui
                   >
                     {w.title}
                   </p>
-                  <p
-                    className="font-playfair italic text-[#b8966e]/60 text-[0.76rem]
-                                leading-relaxed mb-3 flex-1"
-                  >
-                    {w.subtitle}
-                  </p>
+                  {w.subtitle && (
+                    <p
+                      className="font-playfair italic text-[#b8966e]/60 text-[0.76rem]
+                                  leading-relaxed mb-3 flex-1"
+                    >
+                      {w.subtitle}
+                    </p>
+                  )}
 
                   {/* Tags */}
-                  <div className="flex flex-wrap gap-1.5">
+                  <div className="flex flex-wrap gap-1.5 mt-auto">
                     {w.tags.map((tag, t) => (
                       <span
                         key={t}

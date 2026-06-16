@@ -112,7 +112,7 @@ const GalleryTeaserMobile = () => {
         <img
           src="/assets/centerImg.png"
           alt="Debapriya Adhikary"
-          className="w-full max-w-[280px] object-contain"
+          className="w-full max-w-[290px] object-contain"
           style={{
             filter: "drop-shadow(0 16px 40px rgba(201,164,85,0.16))",
             maskImage: "radial-gradient(ellipse 72% 88% at 50% 50%, black 35%, transparent 100%)",
@@ -133,7 +133,7 @@ const GalleryTeaserMobile = () => {
           className="flex gap-3 pb-2"
           style={{ width: "max-content" }}
           animate={{ x: ["0%", "-50%"] }}
-          transition={{ duration: 22, repeat: Infinity, ease: "linear" }}
+          transition={{ duration: 55, repeat: Infinity, ease: "linear" }}
         >
           {/* Duplicate array for seamless infinite loop */}
           {[...SRCS, ...SRCS].map((item, i) => (

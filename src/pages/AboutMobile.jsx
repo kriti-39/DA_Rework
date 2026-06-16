@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Gurus from "../components/Gurus/Gurus";
 
 // ── DATA ──────────────────────────────────────────────────
 const AWARDS = [
@@ -20,8 +21,13 @@ const FELLOWSHIPS = [
 ];
 
 const GALLERY_IMGS = [
-  "/assets/AG1.jpg", "/assets/AG2.jpeg", "/assets/AG3.jpg",
-  "/assets/AG4.jpg", "/assets/AG5.jpg",  "/assets/AG6.jpg", "/assets/AG7.jpg",
+   "/assets/AG1.jpg",
+  "/assets/AG2.jpeg",
+  "/assets/hh1.jpg",
+  "/assets/AG4.jpg",
+  "/assets/new27.jpeg",
+  "/assets/new26.jpeg",
+  "/assets/AG7.jpg",
 ];
 const MARQUEE_IMGS = [...GALLERY_IMGS, ...GALLERY_IMGS];
 
@@ -192,7 +198,14 @@ const AboutMobile = () => {
         </div>
       </section>
 
-      <Divider />
+     
+
+      {/* ══════════════════════════
+          GURUS
+      ══════════════════════════ */}
+      <Gurus />
+
+     
 
       {/* ══════════════════════════
           BROTHERHOOD — DevaSaman
@@ -432,7 +445,7 @@ const AboutMobile = () => {
             className="flex gap-3 py-2"
             style={{ width: "max-content" }}
             animate={{ x: ["0%", "-50%"] }}
-            transition={{ duration: 28, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 45, repeat: Infinity, ease: "linear" }}
           >
             {MARQUEE_IMGS.map((src, i) => (
               <div

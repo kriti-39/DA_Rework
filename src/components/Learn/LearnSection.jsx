@@ -3,10 +3,10 @@ import { motion, AnimatePresence, useScroll, useTransform, useSpring } from "fra
 
 // ── DUMMY THUMBNAILS (replace with real ones later) ───────
 const workshopVideos = [
-  { img: "/assets/T1.jpg", title: "Raga Yaman Workshop" },
-  { img: "/assets/T2.jpg", title: "Bhairavi Masterclass" },
-  { img: "/assets/T3.jpg", title: "Thumri Deep Dive" },
-  { img: "/assets/T4.jpg", title: "Sur & Laya Session" },
+  { img: "/assets/workshop1.png", title: "Voice" },
+  { img: "/assets/workshop2.png", title: "Palta" },
+  { img: "/assets/workshop4.png", title: "Riyaz" },
+  { img: "/assets/workshop6.png", title: "Thumri" },
 ];
 
 const freeVideos = [

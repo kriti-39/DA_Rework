@@ -5,11 +5,10 @@ import { SiLinktree } from "react-icons/si";
 
 // ── NAV LINKS ─────────────────────────────────────────────
 const NAV = [
-  { label: "Home",    to: "/"              },
-  { label: "About",   to: "/about"         },
-  { label: "Learn",   to: "/learn"         },
-  { label: "Gallery", to: "/gallery"       },
-  { label: "Contact", to: "/learn#contact" },
+  { label: "Home",    to: "/"        },
+  { label: "About",   to: "/about"   },
+  { label: "Learn",   to: "/learn"   },
+  { label: "Gallery", to: "/gallery" },
 ];
 
 // ── ICONS ─────────────────────────────────────────────────
@@ -46,7 +45,7 @@ const FacebookIcon = () => (
 
 
 const SOCIALS = [
-  { label: "YouTube",   href: "https://www.youtube.com/@musingswithdeva",          Icon: YouTubeIcon   },
+  { label: "YouTube",   href: "https://www.youtube.com/@DevaSamanMusic",          Icon: YouTubeIcon   },
   { label: "Instagram", href: "https://www.instagram.com/musingswithdeva",          Icon: InstagramIcon },
   { label: "Spotify",   href: "https://open.spotify.com/artist/46ClZdZ6yv7I0rJVfUONEC?si=WO3ls2_2Sv2GXT1suYY0jw",                                                   Icon: () => <FaSpotify size={17} /> },
   { label: "Facebook",  href: "https://www.facebook.com/Debapriyaadhikarysings",    Icon: FacebookIcon  },
@@ -157,7 +156,7 @@ performance, teaching, & devotion to the music.
 
           {/* WhatsApp CTA — replace number below */}
           <a
-            href="https://wa.me/+919038674555?text=Hi%2C"
+            href="https://wa.me/+919038674555?text=Hi..."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2.5 font-jost text-[9.5px]

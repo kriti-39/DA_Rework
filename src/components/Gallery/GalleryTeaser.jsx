@@ -26,14 +26,14 @@ const SRCS = [
   { src: "/assets/v8.jpeg",  caption: "Moments in Music" },  // 13 V  ⚠ add hv11
   { src: "/assets/hv16.jpeg", caption: "Moments in Music" },  // 14 V
   // ── RIGHT row2 — horizontal ──
-  { src: "/assets/hh4.jpg",   caption: "Moments in Music" },  // 15 H
+  { src: "/assets/new24.jpeg",   caption: "Moments in Music" },  // 15 H
   { src: "/assets/hh5.jpg",   caption: "Moments in Music" },  // 16 H
   { src: "/assets/concert.jpeg",   caption: "Moments in Music" },  // 17 H
   // ── RIGHT row3 — vertical ──
   { src: "/assets/hv13.jpeg",  caption: "Moments in Music" },  // 18 V  ⚠ add hv13
-  { src: "/assets/hv12.jpeg",  caption: "Moments in Music" },  // 19 V  ⚠ add hv14
-  { src: "/assets/hv15.jpeg",  caption: "Moments in Music" },  // 20 V  ⚠ add hv15
-  { src: "/assets/hv14.jpeg",  caption: "Moments in Music" },  // 21 V  ⚠ add hv16
+  { src: "/assets/new19.jpeg",  caption: "Moments in Music" },  // 19 V  ⚠ add hv14
+  { src: "/assets/new16.jpeg",  caption: "Moments in Music" },  // 20 V  ⚠ add hv15
+  { src: "/assets/new18.jpeg",  caption: "Moments in Music" },  // 21 V  ⚠ add hv16
 ];
 
 // ── LAYOUT CONSTANTS ──────────────────────────────────────

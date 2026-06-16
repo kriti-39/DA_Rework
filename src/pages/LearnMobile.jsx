@@ -20,14 +20,12 @@ const GURUS = [
 ];
 
 const WORKSHOPS = [
-  { img: "/assets/T1.jpg",   title: "Raga Yaman",        subtitle: "An evening raga — alaap, jod and khayal bandish",           tags: ["Beginner Friendly", "2 hr"] },
-  { img: "/assets/T2.jpg",   title: "Bhairavi",           subtitle: "Grammar, ornamentation and thumri",                         tags: ["Intermediate", "3 hr"] },
-  { img: "/assets/T3.jpg",   title: "Thumri & Dadra",    subtitle: "Emotion, text and improvisation",                            tags: ["2 yr+ Trained", "2 hr"] },
-  { img: "/assets/T4.jpg",   title: "Sur & Laya",         subtitle: "Melody and rhythm in dialogue",                             tags: ["All Levels", "1.5 hr"] },
-  { img: "/assets/YT1.jpg",  title: "Raga Bhimpalasi",   subtitle: "An afternoon raga of longing",                               tags: ["Intermediate", "2 hr"] },
-  { img: "/assets/YT2.jpg",  title: "Khayal Bandish",    subtitle: "Rare compositions from Benaras",                             tags: ["5 yr+ Trained", "3 hr"] },
-  { img: "/assets/YT3.jpg",  title: "Voice & Swara",     subtitle: "Shruti sensitivity and resonance training",                  tags: ["All Levels", "2 hr"] },
-  { img: "/assets/YT4.jpg",  title: "Raga Darbari",      subtitle: "A late-night raga — meditative, profound",                   tags: ["5 yr+ Trained", "2.5 hr"] },
+  { img: "/assets/workshop1.png", title: "Strengthen Your Voice With Deva",                  subtitle: "7 days extensive workshop",  url: "https://musingswithdeva.gumroad.com/l/voice",  tags: ["Beginner Friendly", "11 hr"] },
+  { img: "/assets/workshop2.png", title: "Strengthen Your Voice With Deva",                  subtitle: "3 days workshop on Palta",   url: "https://musingswithdeva.gumroad.com/l/palta",  tags: ["Beginner Friendly", "4 hr 20 min"] },
+  { img: "/assets/workshop3.png", title: "Strengthen Your Voice With Deva",                  subtitle: "Transform your voice",       url: "https://musingswithdeva.gumroad.com/l/syv3",   tags: ["Beginner Friendly", "~4 hr"] },
+  { img: "/assets/workshop4.png", title: "Morning Riyaz with Guruji",                        subtitle: "",                           url: "https://musingswithdeva.gumroad.com/l/riyaz",  tags: ["Beginner Friendly", "2 hr 43 min"] },
+  { img: "/assets/workshop5.png", title: "An Immersive Journey into Thumri, Kajri and Jhula", subtitle: "",                          url: "https://musingswithdeva.gumroad.com/l/thumri", tags: ["Beginner Friendly", "3 hr 15 min"] },
+  { img: "/assets/workshop6.png", title: "Art of Bandish Gayaki",                            subtitle: "Raga: Bhimpalash",          url: "https://musingswithdeva.gumroad.com/l/gayaki", tags: ["Beginner Friendly", "2 hr 25 min"] },
 ];
 
 const YT_SERIES = [
@@ -209,7 +207,7 @@ const LearnMobile = () => (
       {/* WhatsApp CTA */}
       <motion.div className="flex justify-center" {...fadeUp(0.1)}>
         <a
-          href="https://wa.me/919038674555"
+          href="https://wa.me/+917003886380?text=Namaskar%2C%20I%20wish%20to%20enquire%20about%20learning%20sessions%20with%20Debapriya%20Ji."
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 font-jost text-[11px]
@@ -262,36 +260,42 @@ const LearnMobile = () => (
         {WORKSHOPS.map((w, i) => (
           <motion.a
             key={i}
-            href="#"
+            href={w.url}
+            target="_blank"
+            rel="noopener noreferrer"
             className="group flex flex-col border border-[#c9a455]/20 overflow-hidden"
             {...fadeUp(i * 0.06)}
           >
+            {/* Thumbnail */}
             <div className="relative aspect-video overflow-hidden shrink-0">
               <img
                 src={w.img} alt={w.title}
                 className="w-full h-full object-cover"
-                style={{ filter: "brightness(0.50) sepia(0.18)" }}
+                style={{ filter: "brightness(0.92)" }}
               />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-7 h-7 rounded-full border border-[#c9a455]/60 flex items-center justify-center bg-[#120a05]/50">
-                  <PlayIcon />
-                </div>
-              </div>
             </div>
+            {/* Card body */}
             <div className="flex flex-col flex-1 p-2.5 bg-[#0d0703]/60">
               <p className="font-cinzel text-[0.7rem] tracking-wide text-[#f0e6d0]/85 leading-snug mb-1">
                 {w.title}
               </p>
-              <p className="font-playfair italic text-[#b8966e]/60 text-[0.65rem] leading-relaxed mb-2 flex-1">
-                {w.subtitle}
-              </p>
-              <div className="flex flex-wrap gap-1">
+              {w.subtitle && (
+                <p className="font-playfair italic text-[#b8966e]/60 text-[0.65rem] leading-relaxed mb-2">
+                  {w.subtitle}
+                </p>
+              )}
+              {/* Tags */}
+              <div className="flex flex-wrap gap-1 mt-auto mb-2">
                 {w.tags.map((tag, t) => (
                   <span key={t} className="font-jost text-[6.5px] tracking-[0.2em] uppercase text-[#c9a455]/55 border border-[#c9a455]/20 px-1.5 py-0.5">
                     {tag}
                   </span>
                 ))}
               </div>
+              {/* Get Access — replaces desktop hover */}
+              <span className="inline-flex items-center justify-center gap-1 font-jost text-[8px] tracking-[0.25em] uppercase text-[#c9a455] border border-[#c9a455]/50 bg-[#c9a455]/10 px-2 py-1.5">
+                Get Access →
+              </span>
             </div>
           </motion.a>
         ))}

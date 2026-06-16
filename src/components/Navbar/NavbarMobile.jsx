@@ -184,7 +184,7 @@ const NavbarMobile = () => {
               <div className="mt-auto">
                 <div className="h-[1px] bg-gradient-to-r from-[#c9a455]/40 to-transparent mb-6" />
                 <a
-                  href={`https://wa.me/${WA_NUMBER}`}
+                  href={`https://wa.me/${WA_NUMBER}?text=Hi...`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 mb-5"

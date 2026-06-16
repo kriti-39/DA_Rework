@@ -24,7 +24,14 @@ const CAROUSEL_IMGS = [
   { src: "/assets/AG6.jpg",  w: 110, h: 162 },
   { src: "/assets/GI2.jpeg", w: 152, h: 105 },
   { src: "/assets/AG7.jpg",  w: 110, h: 134 },
-  { src: "/assets/T1.jpg",   w: 145, h: 100 },
+  { src: "/assets/new20.jpeg",   w: 145, h: 100 },
+  { src: "/assets/new21.jpeg",   w: 145, h: 100 },
+  { src: "/assets/new22.jpeg",   w: 145, h: 100 },
+  { src: "/assets/new23.jpeg",   w: 145, h: 100 },
+  { src: "/assets/new24.jpeg",   w: 145, h: 100 },
+  { src: "/assets/new25.jpeg",   w: 145, h: 100 },
+ 
+
 ];
 const C_TRACK_W = CAROUSEL_IMGS.reduce((a, c) => a + c.w, 0)
                 + CAROUSEL_IMGS.length * C_GAP;

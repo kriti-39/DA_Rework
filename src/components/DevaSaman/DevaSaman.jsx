@@ -15,7 +15,7 @@ const SectionLabel = ({ text }) => (
 const TRIO = [
   { src: "/assets/SM.jpg",  label: "Samanwaya Sarkar",   offsetY: 0 },
   { src: "/assets/DS1.jpg", label: "DevaSaman",           offsetY: 0 },
-  { src: "/assets/DA.JPG",  label: "Debapriya Adhikary",  offsetY: 0 },
+  { src: "/assets/AG7.jpg",  label: "Debapriya Adhikary",  offsetY: 0 },
 ];
 
 // ── COMPONENT ─────────────────────────────────────────────────
