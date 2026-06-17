@@ -708,7 +708,7 @@ Rather than following a rigid syllabus, the learning unfolds organically — gui
             transition={{ duration: 1.0, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
           >
             <a
-              href="https://linktr.ee/debapriyaadhikary"
+              href="https://linktr.ee/musingswithdeva?utm_source=linktree_profile_share&ltsid=733caaf0-b28d-476e-95e6-858474e9a142"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 font-jost text-[10px]

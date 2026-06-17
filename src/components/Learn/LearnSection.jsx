@@ -11,9 +11,9 @@ const workshopVideos = [
 ];
 
 const freeVideos = [
-  { img: "/assets/YT1.jpg", url: "https://youtube.com/playlist?list=PLetziL4At--PNAtMyf6naVX5LBZcekg8T&si=0T25gcPDYDCkkZPZ", title: "Raga Shastra"    },
-  { img: "/assets/HL2.jpg", url: "https://youtube.com/playlist?list=PLetziL4At--OuOU3YTJfsNPgi31K4ZY-f&si=8E6RdeZoZHvdWlc2", title: "Sing with Deva"        },
-  { img: "/assets/HL3.jpg", url: "https://youtu.be/9e7cQnlNhl8?si=q_mKythy79wkS9rB", title: "Know Your Voice" },
+  { img: "/assets/YT1.jpg", url: "https://www.youtube.com/watch?v=R--sNOOQPWk&list=PLetziL4At--PNAtMyf6naVX5LBZcekg8T", title: "Raga Shastra"    },
+  { img: "/assets/HL2.jpg", url: "https://www.youtube.com/watch?v=7KVTyO3Vo0A&list=PLetziL4At--OuOU3YTJfsNPgi31K4ZY-f", title: "Sing with Deva"        },
+  { img: "/assets/HL3.jpg", url: "https://www.youtube.com/watch?v=9e7cQnlNhl8&list=PLetziL4At--OWbfygM3W2QGyTa0Dbk4Th", title: "Know Your Voice" },
 ];
 
 // ── PLAY ICON ─────────────────────────────────────────────
