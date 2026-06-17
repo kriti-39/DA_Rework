@@ -308,7 +308,7 @@ const LearnMobile = () => (
       {/* CTA */}
       <div className="flex justify-center">
         <a
-          href="https://linktr.ee/debapriyaadhikary"
+          href="https://linktr.ee/musingswithdeva?utm_source=linktree_profile_share&ltsid=509ec3ae-5cb0-4382-84ba-ad2cdc95bfdd"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 font-jost text-[10px] tracking-[0.3em] uppercase
