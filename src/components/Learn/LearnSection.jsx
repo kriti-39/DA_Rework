@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import { motion, AnimatePresence, useScroll, useTransform, useSpring } from "framer-motion";
+import { Link } from "react-router-dom";
 
 // ── DUMMY THUMBNAILS (replace with real ones later) ───────
 const workshopVideos = [
@@ -31,8 +32,8 @@ const ClassesContent = () => (
       advanced practice, his teaching is patient, rigorous, and deeply personal — shaped
       around your voice, your rhythm, and your time.
     </p>
-    <a
-      href="/contact"
+    <Link
+      to="/learn"
       className="inline-flex items-center gap-3 font-jost text-[10px] tracking-[0.3em] uppercase
                  text-[#c9a455] border border-[#c9a455]/40 px-6 py-3
                  hover:border-[#c9a455] hover:bg-[#c9a455]/5
@@ -40,7 +41,7 @@ const ClassesContent = () => (
     >
       Details
       <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-    </a>
+    </Link>
   </div>
 );
 
@@ -76,8 +77,8 @@ const WorkshopsContent = () => (
       ))}
     </div>
 
-    <a
-      href="/learn"
+    <Link
+      to="/learn"
       className="inline-flex items-center gap-3 font-jost text-[10px] tracking-[0.3em] uppercase
                  text-[#c9a455] border border-[#c9a455]/40 px-6 py-3
                  hover:border-[#c9a455] hover:bg-[#c9a455]/5
@@ -85,7 +86,7 @@ const WorkshopsContent = () => (
     >
       Details
       <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-    </a>
+    </Link>
   </div>
 );
 
@@ -136,8 +137,8 @@ const FreeResourcesContent = () => (
       </div>
     </div>
 
-    <a
-      href="/contact"
+    <Link
+      to="/learn"
       className="inline-flex items-center gap-3 font-jost text-[10px] tracking-[0.3em] uppercase
                  text-[#c9a455] border border-[#c9a455]/40 px-6 py-3
                  hover:border-[#c9a455] hover:bg-[#c9a455]/5
@@ -145,7 +146,7 @@ const FreeResourcesContent = () => (
     >
       Details
       <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-    </a>
+    </Link>
   </div>
 );
 

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const videos = [
   {
@@ -96,13 +97,13 @@ const WatchSectionMobile = () => {
 
       {/* CTA */}
       <div className="flex justify-center mt-10">
-        <a
-          href="/performances"
+        <Link
+          to="/gallery"
           className="inline-flex items-center gap-3 font-jost text-[10px] tracking-[0.28em] uppercase text-[#c9a455] border border-[#c9a455]/40 px-6 py-3 hover:border-[#c9a455] transition-all duration-300"
         >
           View All Performances
           <span>→</span>
-        </a>
+        </Link>
       </div>
 
     </section>

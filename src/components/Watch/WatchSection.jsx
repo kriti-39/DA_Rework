@@ -1,5 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+import { Link } from "react-router-dom";
 
 // ── VIDEOS ────────────────────────────────────────────────
 const videos = [
@@ -279,13 +280,13 @@ const WatchSection = () => {
             transition={{ duration: 0.8 }}
           >
 
-            <a
-              href="/performances"
+            <Link
+              to="/gallery"
               className="inline-flex items-center gap-3 font-jost text-[10px] tracking-[0.28em] uppercase text-[#c9a455] border border-[#c9a455]/40 px-6 py-3 hover:border-[#c9a455] hover:bg-[#c9a455]/5 transition-all duration-300 group"
             >
               View All Performances
               <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-            </a>
+            </Link>
           </motion.div>
 
         </div>

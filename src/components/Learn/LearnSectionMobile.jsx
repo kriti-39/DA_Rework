@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const workshopVideos = [
   { img: "/assets/workshop1.png", title: "Voice" },
@@ -32,14 +33,14 @@ const panels = [
           the guru-shishya parampara. Whether you are beginning your first raga or deepening
           an advanced practice, his teaching is patient, rigorous, and deeply personal.
         </p>
-        <a
-          href="/contact"
+        <Link
+          to="/learn"
           className="inline-flex items-center gap-2 font-jost text-[10px] tracking-[0.3em] uppercase
                      text-[#c9a455] border border-[#c9a455]/40 px-5 py-2.5
                      hover:border-[#c9a455] transition-all duration-300"
         >
           Details →
-        </a>
+        </Link>
       </div>
     ),
   },
@@ -68,14 +69,14 @@ const panels = [
             </div>
           ))}
         </div>
-        <a
-          href="/learn"
+        <Link
+          to="/learn"
           className="inline-flex items-center gap-2 font-jost text-[10px] tracking-[0.3em] uppercase
                      text-[#c9a455] border border-[#c9a455]/40 px-5 py-2.5
                      hover:border-[#c9a455] transition-all duration-300"
         >
           Details →
-        </a>
+        </Link>
       </div>
     ),
   },
