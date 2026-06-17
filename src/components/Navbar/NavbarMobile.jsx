@@ -18,7 +18,7 @@ const NavbarMobile = () => {
   const [visible, setVisible]       = useState(true);
   const [scrolled, setScrolled]     = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [audioPlaying, setAudio]    = useState(false);
+  const [audioPlaying, setAudio]    = useState(true);
   const lastScrollY = useRef(0);
   const audioRef    = useRef(null);
   const location    = useLocation();
@@ -52,6 +52,27 @@ const NavbarMobile = () => {
       ? audioRef.current.play().catch(() => {})
       : audioRef.current.pause();
   }, [audioPlaying]);
+
+  // Browsers block autoplay until a user gesture — start music on first tap/click.
+  // Guard by viewport so only the mobile navbar (<768px) plays (avoids double audio).
+  useEffect(() => {
+    const start = () => {
+      if (window.innerWidth < 768 && audioRef.current && audioPlaying) {
+        audioRef.current.volume = 0.22;
+        audioRef.current.play().catch(() => {});
+      }
+      cleanup();
+    };
+    const cleanup = () => {
+      window.removeEventListener("pointerdown", start);
+      window.removeEventListener("keydown", start);
+      window.removeEventListener("touchstart", start);
+    };
+    window.addEventListener("pointerdown", start);
+    window.addEventListener("keydown", start);
+    window.addEventListener("touchstart", start);
+    return cleanup;
+  }, []); // once on mount
 
   return (
     <>
