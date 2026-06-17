@@ -78,7 +78,7 @@ const YT_SERIES = [
       "An in-depth exploration of ragas — their grammar, history and emotional essence",
     description:
       "In this series, a wide range of ragas from Hindustani Shastriya Sangeet are explored in depth with Debapriya Adhikary, who takes listeners on an immersive musical journey. Following the principles of Ashtaang Gayaki, he carefully explains each aspect of raga presentation, including its structure, mood, and expression, supported by detailed demonstrations in Vilambit and/or Drut compositions. This initiative is a sincere effort to document the richness and diversity of ragas, preserving their essence for future generations. By breaking down complex concepts into accessible insights, the series serves as both an educational resource and a valuable archive for students, practitioners, and connoisseurs of Indian classical music.",
-    playlistUrl: "https://www.youtube.com/@DebapriyaAdhikary",
+    playlistUrl: "https://www.youtube.com/watch?v=R--sNOOQPWk",
     videos: [
       {
         img: "/assets/YT1.jpg",
@@ -109,7 +109,7 @@ const YT_SERIES = [
       "Structured lessons for aspiring singers — from foundational sur to raga study",
     description:
       "Debapriya Adhikary offers thoughtfully designed online vocal tutorials that focus on various aspects of Hindustani classical music. These include voice culture, raga understanding, and the finer elements of gayaki, presented in a clear and structured manner to benefit learners at different stages of their musical journey.",
-    playlistUrl: "https://www.youtube.com/@DebapriyaAdhikary",
+    playlistUrl: "https://www.youtube.com/watch?v=7KVTyO3Vo0A&list=PLetziL4At--OuOU3YTJfsNPgi31K4ZY-f",
     videos: [
       {
         img: "/assets/SWD1.jpg",
