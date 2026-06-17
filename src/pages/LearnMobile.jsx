@@ -2,21 +2,22 @@ import { motion } from "framer-motion";
 
 // ── DATA ──────────────────────────────────────────────────
 const WHAT_YOU_LEARN = [
-  { label: "Raga",            detail: "Alaap, jod, jhala and bandish in the khayal tradition" },
-  { label: "Voice Culture",   detail: "Swara placement, shruti sensitivity and resonance" },
-  { label: "Ornamentation",   detail: "Taan, meend, gamak, murki and their expressive use" },
-  { label: "Light Classical", detail: "Thumri, tappa, tap-thumri, dadra, kajri and jhula" },
-  { label: "Layakari",        detail: "Rhythmic nuance — playing with and around tala" },
-  { label: "Bandish",         detail: "Rare compositions from the Benaras and Senia traditions" },
-  { label: "Dhrupad",         detail: "Under the continuing influence of Pt. Uday Bhawalkar's lineage" },
+  { label: "Voice Culture",                                 detail: "Swara placement, shruti sensitivity, breath control, tone production and resonance" },
+  { label: "Palta Practice",                                detail: "Systematic voice training through alankars and paltas designed to strengthen sur, clarity, agility, and vocal stability." },
+  { label: "Basic Ragas with Bandishes",                    detail: "Building a strong foundation in raga structure, phrasing, and presentation." },
+  { label: "Advanced ragas with vilambit and drut bandishes", detail: "focusing on elaboration, layakari, taan development, and performance aesthetics." },
+  { label: "Music forms of Purab Ang",                      detail: " Including khayal, tappa, thumri, dadra, kajri, and jhula." },
+  { label: "Ornamentation",                                 detail: "The expressive use of taan, meend, gamak, and murki." },
+  { label: "Layakari",                                      detail: "Developing rhythmic nuance and an intuitive relationship with tala." },
+  { label: "Bandish Gayaki",                                detail: "Learning rare and traditional compositions along with their stylistic interpretation and presentation." },
 ];
 
 const GURUS = [
-  { name: "Pt. Samaresh Chawdhury",     detail: "Senia & Maihar Gharanas · 14 years" },
-  { name: "Dr. Girija Devi",            detail: "Padma Vibhushan · Benaras Gharana · 11 years" },
+  { name: "Pt. Samaresh Chawdhury",     detail: "Senia & Maihar Gharanas" },
+  { name: "Dr. Girija Devi",            detail: "Padma Vibhushan · Benaras Gharana" },
   { name: "Pt. Kumar Prasad Mukherjee", detail: "Agra & Rampur-Sahaswan traditions" },
   { name: "Pt. Vijay Kichlu",           detail: "Agra Gharana" },
-  { name: "Pt. Uday Bhawalkar",         detail: "Dhrupad tradition · ongoing" },
+  { name: "Pt. Uday Bhawalkar",         detail: "Dhrupad tradition · Dagarbaani" },
 ];
 
 const WORKSHOPS = [
@@ -118,8 +119,9 @@ const LearnMobile = () => (
           <span className="text-[#c9a455]/80 font-normal">National Award-winning artist</span>{" "}
           and torchbearer of the{" "}
           <span className="text-[#c9a455]/80 font-normal">Senia - Banaras</span>{" "}
-          tradition. The training follows an unhurried and deeply personal approach, shaped around
-          each student's voice, pace, and artistic growth.
+          tradition. Drawing from the wisdom of India's great gharanas, the training follows an
+          unhurried and deeply personal approach, shaped around each student's voice, pace, and
+          artistic growth.
         </p>
       </motion.div>
 
@@ -149,11 +151,13 @@ const LearnMobile = () => (
           <p>
             Training is offered both{" "}
             <span className="text-[#c9a455]/80 font-normal">online and in-person</span>,
-            structured around your schedule. Sessions are conducted in Bengali, Hindi, or English.
+            structured around your schedule and pace of learning. Sessions are conducted in Bengali,
+            Hindi, or English.
           </p>
           <p>
             The curriculum unfolds organically — from foundational sur and voice placement into
-            raga grammar, composition, and the subtleties of improvisation.
+            raga grammar, composition, and the subtleties of improvisation. No rigid syllabus; the
+            path is drawn by the student's ear and readiness.
           </p>
         </div>
       </motion.div>

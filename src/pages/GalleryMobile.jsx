@@ -15,21 +15,18 @@ const CARDS = [
 // ── PHOTO CAROUSEL ─────────────────────────────────────────
 const C_GAP = 8;
 const CAROUSEL_IMGS = [
-  { src: "/assets/AG1.jpg",  w: 110, h: 162 },
-  { src: "/assets/AG3.jpg",  w: 148, h: 100 },
-  { src: "/assets/AG5.jpg",  w: 110, h: 145 },
-  { src: "/assets/AG2.jpeg", w: 155, h: 106 },
-  { src: "/assets/GI1.jpeg", w: 110, h: 178 },
-  { src: "/assets/AG4.jpg",  w: 135, h: 96  },
-  { src: "/assets/AG6.jpg",  w: 110, h: 162 },
-  { src: "/assets/GI2.jpeg", w: 152, h: 105 },
-  { src: "/assets/AG7.jpg",  w: 110, h: 134 },
-  { src: "/assets/new20.jpeg",   w: 145, h: 100 },
-  { src: "/assets/new21.jpeg",   w: 145, h: 100 },
-  { src: "/assets/new22.jpeg",   w: 145, h: 100 },
-  { src: "/assets/new23.jpeg",   w: 145, h: 100 },
-  { src: "/assets/new24.jpeg",   w: 145, h: 100 },
-  { src: "/assets/new25.jpeg",   w: 145, h: 100 },
+  { src: "/assets/AG7.jpg",   w: 148, h: 218 },  // portrait
+  { src: "/assets/AG5.jpg",   w: 200, h: 136 },  // landscape
+  { src: "/assets/AG2.jpeg",   w: 148, h: 195 },  // portrait
+  { src: "/assets/AG1.jpg",  w: 212, h: 146 },  // landscape
+  { src: "/assets/GI1.jpeg",  w: 148, h: 240 },  // portrait tall
+  { src: "/assets/T1.jpg",   w: 182, h: 130 },  // landscape compact
+  { src: "/assets/new1.jpeg",   w: 148, h: 218 },  // portrait
+  { src: "/assets/GP1.jpg",  w: 205, h: 142 },  // landscape
+  { src: "/assets/vertical.jpeg",   w: 148, h: 180 },  // portrait short
+  { src: "/assets/concert.jpeg",    w: 196, h: 136 },  // landscape
+  { src: "/assets/AG4.jpg",    w: 148, h: 220 },  // portrait
+  { src: "/assets/T3.jpg",    w: 208, h: 148 },  
  
 
 ];
@@ -108,7 +105,7 @@ const GalleryMobile = () => {
             className="flex gap-3"
             style={{ width: "max-content" }}
             animate={{ x: ["0%", "-50%"] }}
-            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 55, repeat: Infinity, ease: "linear" }}
           >
             {[...CARDS, ...CARDS].map((card, i) => (
               <div
@@ -179,7 +176,7 @@ const GalleryMobile = () => {
           className="flex items-end"
           style={{ gap: C_GAP, width: "max-content" }}
           animate={{ x: [0, -C_TRACK_W] }}
-          transition={{ duration: 50, repeat: Infinity, ease: "linear", repeatType: "loop" }}
+          transition={{ duration: 55, repeat: Infinity, ease: "linear", repeatType: "loop" }}
         >
           {[...CAROUSEL_IMGS, ...CAROUSEL_IMGS].map((img, i) => (
             <div

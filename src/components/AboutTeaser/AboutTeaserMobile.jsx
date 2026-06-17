@@ -51,7 +51,9 @@ const AboutTeaserMobile = () => (
         <em className="text-[#c9a455]/80 not-italic font-normal">Senia - Banaras</em>{" "}
         tradition and an{" "}
         <em className="text-[#c9a455]/80 not-italic font-normal">A-Grade Artist of All India Radio</em>
-        , whose art carries the quiet weight of a tradition he has spent a lifetime learning and living.
+        , whose art carries the quiet weight of a tradition he has spent a lifetime learning and
+        living. His performances move between the intimacy of a late-night riyaz and the commanding
+        presence of a grand concert stage.
       </motion.p>
 
       <motion.p
@@ -61,9 +63,11 @@ const AboutTeaserMobile = () => (
         viewport={{ once: true, margin: "-40px" }}
         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.18 }}
       >
-        Beyond music, he is a composer, filmmaker, educator, and producer. His documentary{" "}
+        Beyond music, he is a composer, filmmaker, educator, and producer — a rare polymath of the
+        classical world. His documentary{" "}
         <em className="text-[#c9a455]/80 not-italic font-normal">Girija – A Lifetime In Music</em>{" "}
-        earned him the National Film Award in 2018, presented by the President of India.
+        earned him the National Film Award in 2018, presented by the President of India, cementing his
+        place as a guardian of living cultural heritage.
       </motion.p>
     </div>
 

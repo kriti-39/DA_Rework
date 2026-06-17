@@ -143,15 +143,21 @@ const AboutMobile = () => {
             Born in the industrial township of{" "}
             <span className="text-[#c9a455]/80 font-normal">Sindri, Jharkhand</span>, into a humble
             and educated Bengali family, Debapriya displayed a natural affinity for the arts from an
-            early age. His introduction to music came through his mother,{" "}
-            <span className="text-[#c9a455]/80 font-normal">Anita Adhikary</span>, a disciple of
-            Pt. Jivnath Jha.
+            early age. His introduction to music did not begin through formal lessons, but through the
+            quiet, immersive world of listening to his mother,{" "}
+            <span className="text-[#c9a455]/80 font-normal">Anita Adhikary</span>, sing and practise at
+            home. A disciple of Pt. Jivnath Jha, affectionately known as Taanraj, she became his very
+            first source of musical inspiration.
           </motion.p>
 
           <motion.p {...fadeUp(0.2)}>
-            She introduced him to Pt. Samaresh Chawdhury of the Senia and Maihar gharanas, who
-            accepted Debapriya as his Gandabandh disciple. From the age of eight, he underwent
-            rigorous training under his guidance for fourteen formative years.
+            Recognising her son's innate sensitivity towards music, she introduced him to
+            Pt. Samaresh Chawdhury of the Senia and Maihar gharanas, who later accepted Debapriya as
+            his Gandabandh disciple. From the age of eight, Debapriya underwent rigorous training under
+            his guidance for fourteen formative years. Throughout this journey, his mother travelled
+            tirelessly between Sindri and Durgapur, never allowing weather, festivals, or circumstance
+            to interrupt his learning — a quiet testament to her unwavering dedication and belief in
+            her son's path.
           </motion.p>
 
           {/* About3 image */}
@@ -171,9 +177,20 @@ const AboutMobile = () => {
             className="font-playfair italic text-[#f0e6d0]/50 text-[0.88rem] leading-[1.8] border-l-2 border-[#c9a455]/30 pl-4"
             {...fadeUp(0.1)}
           >
-            "Mom never allowed any excuse when it came to learning. I remember once she got completely
-            drenched in heavy rain while taking me to the railway station — she remained wet for four
-            hours, yet never suggested skipping the class."
+            "Mom never allowed any excuse when it came to learning. I remember once she got
+            completely drenched in heavy rain while taking me to the railway station — she remained
+            wet, standing near the door for four hours just to dry herself, yet never suggested
+            skipping the class."
+          </motion.p>
+
+          <motion.p {...fadeUp(0.1)}>
+            Under the guidance of Pt. Samaresh Chawdhury, Debapriya cultivated a profound
+            understanding of voice culture, tonal smoothness, and the clarity required to render
+            intricate musical movements with grace and precision. These formative years laid the
+            foundation for the artistic identity that would gradually unfold in the years to come. Yet
+            his training extended far beyond technique alone. It was an education in discipline,
+            patience, humility, and the art of deep listening — values that became inseparable from his
+            music and personality alike.
           </motion.p>
 
           <motion.div className="flex items-center gap-3 pt-1" {...fadeUp(0.1)}>
@@ -182,18 +199,37 @@ const AboutMobile = () => {
           </motion.div>
 
           <motion.p {...fadeUp(0.1)}>
-            Debapriya's journey deepened under the legendary{" "}
-            <span className="text-[#c9a455]/80 font-normal">Padma Vibhushan Dr. Girija Devi</span>{" "}
-            of the Benaras gharana, with whom he trained for eleven transformative years — immersing
-            himself in Thumri, Tappa, Dadra, Kajri and the distinctive khayal gayaki of Benaras.
+            Debapriya's musical journey found deeper expression under the legendary{" "}
+            <span className="text-[#c9a455]/80 font-normal">Padma Vibhushan awardee Dr. Girija Devi</span>{" "}
+            of the Benaras gharana, with whom he trained as a Gandabandh disciple for eleven
+            transformative years. Under her affectionate yet rigorous guidance, he immersed himself in
+            the rich expressive traditions of Thumri, Tappa, Tap-Thumri, Dadra, Kajri, and Jhula, while
+            also absorbing rare compositions and the distinctive khayal gayaki of Benaras. More than
+            repertoire alone, Dr. Girija Devi shaped his artistic vision with emotional depth, inner
+            strength, and an understanding that music must transcend the boundaries of notes and words.
           </motion.p>
 
           <motion.p {...fadeUp(0.1)}>
-            He also received guidance from Pt. Kumar Prasad Mukherjee and Pt. Vijay Kichlu.
-            A torchbearer of the Senia-Banaras tradition, his music is marked by clarity, emotional
-            depth, and technical finesse. An A-Grade Artist of All India Radio, National Film Award
-            recipient, and holder of the President's Award, he continues to train under Pt. Uday
-            Bhawalkar in the nuances of Dhrupad.
+            Through her teachings, he learned to approach music not merely as performance, but as a
+            living expression of experience, devotion, and humanity. He also received guidance from
+            Pt. Kumar Prasad Mukherjee of the Agra and Rampur-Sahaswan traditions, and from
+            Pt. Vijay Kichlu of the Agra gharana, who entrusted him with numerous rare bandishes and a
+            deeply refined understanding of the technical and aesthetic beauty of ragas. A torchbearer
+            of the Senia-Banaras tradition, Debapriya Adhikary's music is marked by a rare balance of
+            tradition and innovation. More than three decades of rigorous training have shaped a style
+            distinguished by clarity, emotional depth, and technical finesse. His command over gamaks,
+            intricate taans, meends, and swargam has earned him admiration from audiences and
+            connoisseurs across the world.
+          </motion.p>
+
+          <motion.p {...fadeUp(0.1)}>
+            An A-Grade Artist of All India Radio, as well as a recipient of the National Film Award and
+            the President's Award, he represents a unique confluence of scholarship, performance, and
+            creative vision. He holds a Master's degree in Music and was awarded the Junior Research
+            Fellowship by the Ministry of Culture, Government of India, for his research on the history
+            of Thumri and the contribution of Girija Devi. Continuing his lifelong pursuit of musical
+            refinement, he is presently training under Pt. Uday Bhawalkar, immersing himself in the
+            profound nuances of Dhrupad.
           </motion.p>
         </div>
       </section>
@@ -228,14 +264,19 @@ const AboutMobile = () => {
             creating, and teaching together for over two decades — both as acclaimed soloists and
             as the distinctive duo <span className="text-[#c9a455]/90 font-normal">DevaSaman</span>.
             Among the very few enduring classical duos in the country, their partnership is built
-            on deep musical understanding, creative synergy, and a shared commitment to preserving
-            Indian classical music for contemporary audiences.
+            on a deep musical understanding, creative synergy, and a shared commitment to preserving
+            and reimagining the beauty of Indian classical music for contemporary audiences.
           </motion.p>
           <motion.p {...fadeUp(0.15)}>
             Together, they have directed the{" "}
             <span className="font-playfair italic text-[#f0e6d0]/55">National Award-winning documentary Girija – A Lifetime in Music</span>{" "}
             and composed music for films, theatre productions, and the Australian feature film{" "}
-            <span className="font-playfair italic text-[#f0e6d0]/55">The Last Warrior</span>.
+            <span className="font-playfair italic text-[#f0e6d0]/55">The Last Warrior</span>. Their
+            performances seamlessly weave together tradition, emotion, and innovation, offering
+            audiences a rich and immersive musical experience. Having toured extensively across India
+            and internationally, they continue to captivate connoisseurs, enthusiasts, and listeners of
+            all generations through concerts, collaborations, and educational initiatives around the
+            world.
           </motion.p>
         </div>
 
@@ -282,27 +323,52 @@ const AboutMobile = () => {
         <div className="space-y-4 font-jost font-light text-[#b8966e] text-sm leading-[1.85] mb-6">
           <motion.p {...fadeUp(0.1)}>
             <span className="font-playfair italic text-[#f0e6d0]/55">Girija – A Lifetime in Music</span>{" "}
-            is a heartfelt tribute by the duo DevaSaman to their revered Gurumaa. The film reflects
-            not only her unparalleled musical brilliance, but also the spiritual depth, warmth, and
-            human simplicity that defined her life and presence.
+            is a heartfelt tribute by the duo DevaSaman to their revered Gurumaa, the legendary Girija
+            Devi. The film reflects not only her unparalleled musical brilliance, but also the spiritual
+            depth, warmth, and human simplicity that defined her life and presence.
           </motion.p>
 
           <motion.p
             className="font-playfair italic text-[#f0e6d0]/50 text-[0.88rem] leading-[1.8] border-l-2 border-[#c9a455]/30 pl-4"
             {...fadeUp(0.15)}
           >
-            "Our thought was to let the world know about her vision, through which she could build
-            a beautiful bridge between the living world and the spiritual realms… Life was never so
-            beautiful until we began to see music through her."
+            "Our thought was to let the world know about her vision, through which she could build a
+            beautiful bridge between the living world and the spiritual realms. She could effortlessly
+            break through paradigms and create beauty with simple words, relating them to daily life.
+            We used to be awestruck by her simplicity, nurtured in the midst of her divinity." … the
+            duo says. "Life was never so beautiful until we began to see music through her, and
+            understand the subtleties she revealed with every word of music she uttered."
             <span className="block mt-2 not-italic font-jost text-[10px] tracking-[0.3em] uppercase text-[#c9a455]/50">
               — Debapriya Adhikary &amp; Samanwaya Sarkar
             </span>
           </motion.p>
 
           <motion.p {...fadeUp(0.1)}>
-            This award-winning documentary features rare interviews with Pt. Ravi Shankar, Kishori
-            Amonkar, Ustad Abdul Rashid Khan, Pt. Birju Maharaj, Ustad Amjad Ali Khan, and many
-            more — making it a valuable resource for students and connoisseurs alike.
+            This nationally and internationally award-winning documentary offers a visual journey
+            through the music, philosophy, ideas, and inspiration of the legendary Girija Devi. More
+            than a musical portrait, it reflects the struggle of a woman navigating the socio-economic
+            transformations of pre- and post-independence India — preserving her artistic integrity
+            within a male-dominated society and emerging as a lasting symbol of strength and grace.
+          </motion.p>
+
+          <motion.p {...fadeUp(0.12)}>
+            The film features rare anecdotes and interviews with stalwarts such as Pt. Ravi Shankar,
+            Kishori Amonkar, Ustad Abdul Rashid Khan, Pt. Birju Maharaj, Ustad Amjad Ali Khan, and
+            Pt. Rajan &amp; Sajan Mishra, among many others, making it a valuable resource for students,
+            connoisseurs, and lovers of Indian classical music.
+          </motion.p>
+
+          <motion.p
+            className="font-playfair italic text-[#f0e6d0]/50 text-[0.88rem] leading-[1.8] border-l-2 border-[#c9a455]/30 pl-4"
+            {...fadeUp(0.14)}
+          >
+            "We are immensely grateful to the entire team of the film, including Madhu Chandra and
+            Sudha Datta as producers; our co-director and editor Sankalp Meshram, cinematographers
+            Naiyer Ghufran and Prabal Bose, sound engineer Partha Sarathi Sanyal, sound mixer Ajay PB
+            and many more, for making this dream project a real historical gem."
+            <span className="block mt-2 not-italic font-jost text-[10px] tracking-[0.3em] uppercase text-[#c9a455]/50">
+              — Debapriya Adhikary &amp; Samanwaya Sarkar
+            </span>
           </motion.p>
         </div>
 
@@ -445,7 +511,7 @@ const AboutMobile = () => {
             className="flex gap-3 py-2"
             style={{ width: "max-content" }}
             animate={{ x: ["0%", "-50%"] }}
-            transition={{ duration: 45, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 55, repeat: Infinity, ease: "linear" }}
           >
             {MARQUEE_IMGS.map((src, i) => (
               <div

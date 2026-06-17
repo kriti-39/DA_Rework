@@ -78,7 +78,7 @@ const GalleryTeaserMobile = () => {
   const [lightboxIdx, setLightboxIdx] = useState(null);
 
   return (
-    <section className="md:hidden py-8">
+    <section className="lg:hidden py-8">
 
       {/* Header */}
       <motion.div
