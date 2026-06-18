@@ -45,20 +45,12 @@ const WHAT_YOU_LEARN = [
 ];
 
 const GURUS = [
-  {
-    name: "Pt. Samaresh Chawdhury",
-    detail: "Senia & Maihar Gharanas ",
-  },
-  {
-    name: "Dr. Girija Devi",
-    detail: "Padma Vibhushan · Benaras Gharana ",
-  },
-  {
-    name: "Pt. Kumar Prasad Mukherjee",
-    detail: "Agra & Rampur-Sahaswan traditions",
-  },
-  { name: "Pt. Vijay Kichlu", detail: "Agra Gharana" },
-  { name: "Pt. Uday Bhawalkar", detail: "Dhrupad tradition · Dagarbaani" },
+  { name: "Pt. Samaresh Chawdhury",     detail: "Senia & Maihar Gharanas" },
+  { name: "Dr. Girija Devi",            detail: "Padma Vibhushan · Benaras Gharana" },
+  { name: "Pt. Kumar Prasad Mukherjee", detail: "Agra & Rampur-Sahaswan traditions" },
+  { name: "Pt. Vijay Kichlu",           detail: "Padma Shri · Agra Gharana" },
+  { name: "Pt. Uday Bhawalkar",         detail: "Dhrupad tradition · Dagarbaani" },
+  { name: "Pt. Rajeeb Chakraborty",     detail: "Sarod Maestro · Senia Maihar" },
 ];
 
 const WORKSHOPS = [
@@ -507,13 +499,7 @@ Rather than following a rigid syllabus, the learning unfolds organically — gui
                     Guru–Shishya parampara
                   </span>
                   , where knowledge is passed down across generations with
-                  devotion, discipline, and deep spiritual understanding. A true
-                  Guru carries forward not just technique, but the essence,
-                  values, and emotional depth received from their own Gurus,
-                  ensuring the tradition remains authentic and timeless. Through
-                  years of immersive guidance, the music becomes more than
-                  learning — it becomes a living inheritance of sound,
-                  philosophy, and surrender.
+                  devotion, discipline, and deep spiritual understanding. A true Guru carries forward the spirit of a lineage, transmitting not only knowledge and technique but also the values, discipline, and emotional richness embedded within the tradition. Under such guidance, music transforms into a lifelong journey—an inheritance of sound, philosophy, and surrender.
                 </p>
                 <p>
                   When you are learning from Sri. Debapriya Adhikary, you are

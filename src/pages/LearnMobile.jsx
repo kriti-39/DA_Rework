@@ -16,8 +16,9 @@ const GURUS = [
   { name: "Pt. Samaresh Chawdhury",     detail: "Senia & Maihar Gharanas" },
   { name: "Dr. Girija Devi",            detail: "Padma Vibhushan · Benaras Gharana" },
   { name: "Pt. Kumar Prasad Mukherjee", detail: "Agra & Rampur-Sahaswan traditions" },
-  { name: "Pt. Vijay Kichlu",           detail: "Agra Gharana" },
+  { name: "Pt. Vijay Kichlu",           detail: "Padma Shri · Agra Gharana" },
   { name: "Pt. Uday Bhawalkar",         detail: "Dhrupad tradition · Dagarbaani" },
+  { name: "Pt. Rajeeb Chakraborty",     detail: "Sarod Maestro · Senia Maihar" },
 ];
 
 const WORKSHOPS = [
