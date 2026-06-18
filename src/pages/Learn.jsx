@@ -50,7 +50,7 @@ const GURUS = [
   { name: "Pt. Kumar Prasad Mukherjee", detail: "Agra & Rampur-Sahaswan traditions" },
   { name: "Pt. Vijay Kichlu",           detail: "Padma Shri · Agra Gharana" },
   { name: "Pt. Uday Bhawalkar",         detail: "Dhrupad tradition · Dagarbaani" },
-  { name: "Pt. Rajeeb Chakraborty",     detail: "Sarod Maestro · Senia Maihar" },
+  { name: "Dr. Rajeeb Chakraborty",     detail: "Sarod Maestro · Senia Maihar" },
 ];
 
 const WORKSHOPS = [
