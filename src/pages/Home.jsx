@@ -22,7 +22,7 @@ const Home = () => {
       <div className="hidden md:block"><LearnSection /></div>
       <LearnSectionMobile />
 
-      <div className="hidden lg:block"><GalleryTeaser /></div>
+      <div className="hidden xl:block"><GalleryTeaser /></div>
       <GalleryTeaserMobile />
     </>
   );
