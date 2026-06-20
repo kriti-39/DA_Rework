@@ -34,11 +34,15 @@ const Gurus = () => (
           viewport={{ once: true, margin: "-40px" }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: i * 0.08 }}
         >
-          {/* Circular portrait */}
-          <div
+          {/* Circular portrait — golden-glow hover (same as DevaSaman) */}
+          <motion.div
             className="rounded-full overflow-hidden border border-[#c9a455]/30
                        w-[92px] h-[92px] md:w-[132px] md:h-[132px]"
-            style={{ boxShadow: "0 8px 26px rgba(0,0,0,0.55)" }}
+            style={{ boxShadow: "0 8px 26px rgba(0,0,0,0.55)", cursor: "pointer" }}
+            whileHover={{
+              boxShadow: "0 6px 28px rgba(201,164,85,0.14)",
+              transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] },
+            }}
           >
             <img
               src={g.img}
@@ -47,7 +51,7 @@ const Gurus = () => (
               className="w-full h-full object-cover"
               style={{ filter: "brightness(0.98)" }}
             />
-          </div>
+          </motion.div>
 
           {/* Name */}
           <p className="font-playfair italic text-[#b8966e] text-[0.68rem] md:text-[0.8rem]
