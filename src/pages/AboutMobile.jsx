@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Gurus from "../components/Gurus/Gurus";
+import PerformancesMobile from "../components/Performances/PerformancesMobile";
 
 // ── DATA ──────────────────────────────────────────────────
 const AWARDS = [
@@ -241,7 +242,13 @@ const AboutMobile = () => {
       ══════════════════════════ */}
       <Gurus />
 
-     
+
+      {/* ══════════════════════════
+          PERFORMANCES
+      ══════════════════════════ */}
+      <PerformancesMobile />
+
+      <Divider />
 
       {/* ══════════════════════════
           BROTHERHOOD — DevaSaman
@@ -479,7 +486,7 @@ const AboutMobile = () => {
         </motion.div>
       </section>
 
-      <Divider />
+      
 
       {/* ══════════════════════════
           GALLERY — infinite marquee

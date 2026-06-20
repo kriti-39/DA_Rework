@@ -2,6 +2,7 @@ import { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useTransform, useSpring, AnimatePresence } from "framer-motion";
 import DevaSaman from "../components/DevaSaman/DevaSaman";
 import Gurus from "../components/Gurus/Gurus";
+import Performances from "../components/Performances/Performances";
 
 // ── GOLDEN WAVES (same as Hero) ───────────────────────────
 const GoldenWaves = () => {
@@ -363,7 +364,13 @@ He holds a Master’s degree in Music and was awarded the Junior Research Fellow
       ══════════════════════════════════════════════════ */}
       <Gurus />
 
-    
+
+      {/* ══════════════════════════════════════════════════
+          PERFORMANCES — tour rail + ticket card
+      ══════════════════════════════════════════════════ */}
+      <Performances />
+
+      <Divider />
 
       {/* ══════════════════════════════════════════════════
           BROTHERHOOD — DevaSaman duo section
@@ -681,6 +688,8 @@ He holds a Master’s degree in Music and was awarded the Junior Research Fellow
           </div>
         </div>
       </section>
+
+      
 
       {/* ══════════════════════════════════════════════════
           GALLERY — Staggered infinite marquee
