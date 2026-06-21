@@ -126,7 +126,7 @@ const Navbar = () => {
 
             {/* WhatsApp — Connect */}
             <a
-              href={`https://wa.me/${WA_NUMBER}?text=Hi...`}
+              href={`https://wa.me/${WA_NUMBER}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 group"
@@ -278,7 +278,7 @@ const Navbar = () => {
               <div className="mt-auto">
                 <div className="h-[1px] bg-gradient-to-r from-[#c9a455]/40 to-transparent mb-6" />
                 <a
-                  href={`https://wa.me/${WA_NUMBER}?text=Hi...`}
+                  href={`https://wa.me/${WA_NUMBER}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 mb-5 group"

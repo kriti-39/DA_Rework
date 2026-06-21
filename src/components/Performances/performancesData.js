@@ -111,9 +111,9 @@ const venueCount =
   INTERNATIONAL.reduce((a, c) => a + c.items.length, 0);
 
 export const STATS = {
-  cities:    NATIONAL.length,        // 25
-  countries: INTERNATIONAL.length,   // 12
-  venues:    venueCount,             // 100
+  cities:    NATIONAL.length,             // 25
+  countries: INTERNATIONAL.length,        // 12
+  venues:    Math.max(100, venueCount),   // "100+" badge (grows if data exceeds 100)
 };
 
 export const QUOTE =

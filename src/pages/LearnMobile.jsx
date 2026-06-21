@@ -317,7 +317,7 @@ const LearnMobile = () => (
                      hover:border-[#c9a455] transition-all duration-300"
         >
           <span className="text-[#c9a455]/50 text-[7px]">◆</span>
-          Upcoming Workshops →
+          Stay Tuned for Upcoming Workshops →
         </a>
       </div>
     </section>

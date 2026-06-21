@@ -45,10 +45,10 @@ const FacebookIcon = () => (
 
 
 const SOCIALS = [
-  { label: "YouTube",   href: "https://www.youtube.com/@DevaSamanMusic",          Icon: YouTubeIcon   },
+  { label: "YouTube",   href: "https://youtube.com/@musingswithdeva?si=1QU8FBu5hTBHjzik",          Icon: YouTubeIcon   },
   { label: "Instagram", href: "https://www.instagram.com/musingswithdeva",          Icon: InstagramIcon },
   { label: "Spotify",   href: "https://open.spotify.com/artist/46ClZdZ6yv7I0rJVfUONEC?si=WO3ls2_2Sv2GXT1suYY0jw",                                                   Icon: () => <FaSpotify size={17} /> },
-  { label: "Facebook",  href: "https://www.facebook.com/Debapriyaadhikarysings",    Icon: FacebookIcon  },
+  { label: "Facebook",  href: "https://www.facebook.com/musingswithdeva",    Icon: FacebookIcon  },
   { label: "Linktree",  href: "https://linktr.ee/musingswithdeva",Icon: () => <SiLinktree size={16} /> },
 ];
 
@@ -156,7 +156,7 @@ performance, teaching, & devotion to the music.
 
           {/* WhatsApp CTA — replace number below */}
           <a
-            href="https://wa.me/+919038674555?text=Hi..."
+            href="https://wa.me/+919038674555"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2.5 font-jost text-[9.5px]

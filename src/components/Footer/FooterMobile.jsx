@@ -10,7 +10,7 @@ const NAV = [
 ];
 
 const SOCIALS = [
-  { label: "YouTube",   href: "https://www.youtube.com/@DevaSamanMusic",
+  { label: "YouTube",   href: "https://youtube.com/@musingswithdeva?si=1QU8FBu5hTBHjzik",
     Icon: () => (
       <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
         <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/>
@@ -27,7 +27,7 @@ const SOCIALS = [
   { label: "Spotify",  href: "https://open.spotify.com/artist/46ClZdZ6yv7I0rJVfUONEC?si=WO3ls2_2Sv2GXT1suYY0jw",
     Icon: () => <FaSpotify size={18} />,
   },
-  { label: "Facebook", href: "https://www.facebook.com/Debapriyaadhikarysings",
+  { label: "Facebook", href: "https://www.facebook.com/musingswithdeva",
     Icon: () => (
       <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
         <path d="M24 12.1C24 5.4 18.6 0 12 0S0 5.4 0 12.1C0 18.1 4.4 23 10.1 24v-8.4H7.1v-3.5h3V9.6c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9v2.2h3.3l-.5 3.5h-2.8V24C19.6 23 24 18.1 24 12.1z"/>
@@ -110,7 +110,7 @@ const FooterMobile = () => (
 
       {/* WhatsApp CTA */}
       <a
-        href="https://wa.me/+919038674555?text=Hi..."
+        href="https://wa.me/+919038674555"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-2 font-jost text-[9px] tracking-[0.28em] uppercase

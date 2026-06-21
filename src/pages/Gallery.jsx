@@ -26,7 +26,7 @@ const LEFT_IMGS = [
   { src: "/assets/AG3.jpg",  w: 148, h: 218 },
   { src: "/assets/AG5.jpg",  w: 148, h: 218 },
   { src: "/assets/GI2.jpeg", w: 148, h: 218 },
-  { src: "/assets/AG6.jpg",  w: 148, h: 218 },
+  { src: "/assets/new26.jpeg",  w: 148, h: 218 },
   { src: "/assets/AG2.jpeg", w: 148, h: 218 },
   { src: "/assets/AG4.jpg",  w: 148, h: 218 },
   { src: "/assets/AG7.jpg",  w: 148, h: 218 },
@@ -37,7 +37,7 @@ const RIGHT_IMGS = [
   { src: "/assets/AG7.jpg",  w: 148, h: 218 },
   { src: "/assets/GI1.jpeg", w: 148, h: 218 },
   { src: "/assets/AG2.jpeg", w: 148, h: 218 },
-  { src: "/assets/AG6.jpg",  w: 148, h: 218 },
+  { src: "/assets/new26.jpeg",  w: 148, h: 218 },
   { src: "/assets/AG1.jpg",  w: 148, h: 218 },
   { src: "/assets/AG5.jpg",  w: 148, h: 218 },
   { src: "/assets/GI2.jpeg", w: 148, h: 218 },
@@ -58,6 +58,25 @@ const CAROUSEL_IMGS = [
   { src: "/assets/concert.jpeg",    w: 196, h: 136 },  // landscape
   { src: "/assets/AG4.jpg",    w: 148, h: 220 },  // portrait
   { src: "/assets/T3.jpg",    w: 208, h: 148 },  // landscape
+  { src: "/assets/girija.png", w: 148, h: 196 },  // portrait
+  { src: "/assets/DS1.jpg",    w: 206, h: 138 },  // landscape
+  { src: "/assets/new21.jpeg", w: 148, h: 222 },  // portrait
+  { src: "/assets/hv6.jpg",    w: 192, h: 144 },  // landscape
+  { src: "/assets/new23.jpeg", w: 148, h: 210 },  // portrait
+  { src: "/assets/new11.jpeg", w: 208, h: 138 },  // landscape
+  { src: "/assets/new25.jpeg", w: 148, h: 236 },  // portrait
+  { src: "/assets/new12.png",  w: 214, h: 136 },  // landscape
+  { src: "/assets/v2.jpeg",    w: 148, h: 218 },  // portrait
+  { src: "/assets/new14.jpeg", w: 206, h: 138 },  // landscape
+  { src: "/assets/v4.jpeg",    w: 148, h: 218 },  // portrait
+  { src: "/assets/new15.jpeg", w: 190, h: 144 },  // landscape
+  { src: "/assets/new17.jpeg", w: 208, h: 138 },  // landscape
+  { src: "/assets/new20.jpeg", w: 206, h: 138 },  // landscape
+  { src: "/assets/v1.jpeg",    w: 205, h: 136 },  // landscape
+  { src: "/assets/v5.jpeg",    w: 205, h: 136 },  // landscape
+  { src: "/assets/v7.jpeg",    w: 205, h: 136 },  // landscape
+  { src: "/assets/hv7.jpg",    w: 148, h: 200 },  // portrait (square → vertical)
+  { src: "/assets/IMG-20250810-WA0009.jpg", w: 148, h: 186 },  // portrait (square → vertical)
 ];
 // single-copy track width = sum of widths + n gaps (so duplicate loops seamlessly)
 const C_TRACK_W = CAROUSEL_IMGS.reduce((a, c) => a + c.w, 0) + CAROUSEL_IMGS.length * C_GAP;

@@ -205,7 +205,7 @@ const NavbarMobile = () => {
               <div className="mt-auto">
                 <div className="h-[1px] bg-gradient-to-r from-[#c9a455]/40 to-transparent mb-6" />
                 <a
-                  href={`https://wa.me/${WA_NUMBER}?text=Hi...`}
+                  href={`https://wa.me/${WA_NUMBER}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 mb-5"
@@ -215,9 +215,7 @@ const NavbarMobile = () => {
                     Connect
                   </span>
                 </a>
-                <p className="font-playfair italic text-[#b8966e] text-sm">
-                  Hindustani Classical Vocalist
-                </p>
+                
               </div>
             </motion.div>
           </>

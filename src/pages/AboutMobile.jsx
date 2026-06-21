@@ -41,7 +41,7 @@ const MARQUEE_IMGS = [...GALLERY_IMGS, ...GALLERY_IMGS];
 
 const DEVASAMAN_TRIO = [
   { src: "/assets/SM.jpg",  label: "Samanwaya Sarkar"   },
-  { src: "/assets/DS1.jpg", label: "DevaSaman"           },
+  { src: "/assets/devasamn.jpeg", label: "DevaSaman"           },
   { src: "/assets/DA.JPG",  label: "Debapriya Adhikary"  },
 ];
 
@@ -263,7 +263,7 @@ const AboutMobile = () => {
       <section className="px-6 py-8">
 
         <motion.div {...fadeUp(0)}>
-          <SectionLabel text="Brotherhood" />
+          <SectionLabel text="Musical Brotherhood" />
           <h2 className="font-cinzel font-semibold text-[1.8rem] text-[#f0e6d0] tracking-wide leading-tight mb-1">
             DevaSaman
           </h2>
@@ -325,12 +325,12 @@ const AboutMobile = () => {
       <section className="px-6 py-8">
 
         <motion.div {...fadeUp(0)}>
-          <SectionLabel text="The Torchbearer" />
+          <SectionLabel text="The Award - Winning Documentary" />
           <h2 className="font-cinzel font-semibold text-[1.8rem] text-[#f0e6d0] tracking-wide leading-tight mb-1">
-            Padma Vibhushan Girija Devi
+            Girija – A Lifetime in Music
           </h2>
           <p className="font-playfair italic text-[#c9a455]/80 text-[0.95rem] tracking-wide mb-5">
-            Thumri Queen · Gurumaa
+            Tribute to Gurumaa, the Thumri Queen
           </p>
         </motion.div>
 
