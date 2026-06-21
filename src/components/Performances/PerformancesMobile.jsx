@@ -10,7 +10,7 @@ const CountUp = ({ to }) => {
   useEffect(() => {
     if (!inView) return;
     const controls = animate(0, to, {
-      duration: 1.6, ease: [0.22, 1, 0.36, 1], onUpdate: (v) => setN(Math.round(v)),
+      duration: 2.8, ease: [0.33, 1, 0.68, 1], onUpdate: (v) => setN(Math.round(v)),
     });
     return () => controls.stop();
   }, [inView, to]);
@@ -150,7 +150,10 @@ const PerformancesMobile = () => {
             viewport={{ once: true, margin: "-40px" }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: i * 0.08 }}
           >
-            <div className="font-cinzel text-[1.6rem] text-[#c9a455] leading-none">
+            <div
+              className="font-cinzel text-[1.6rem] text-[#c9a455] leading-none"
+              style={{ textShadow: "0 0 16px rgba(201,164,85,0.5)" }}
+            >
               <CountUp to={s.to} />+
             </div>
             <div className="font-jost text-[0.62rem] tracking-[0.08em] text-[#b8966e]/70 mt-1.5">

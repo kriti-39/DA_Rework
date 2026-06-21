@@ -113,6 +113,9 @@ const Gallery = () => {
   const rawColY = useTransform(scrollYProgress, [0, 1], [0, -520]);
   const colY    = useSpring(rawColY, { stiffness: 38, damping: 20 });
 
+  // Scroll hint fades out as soon as the user starts scrolling
+  const hintOpacity = useTransform(scrollYProgress, [0, 0.05], [1, 0]);
+
   return (
     <main>
 
@@ -121,6 +124,24 @@ const Gallery = () => {
 
         {/* ── STICKY VIEWPORT ── */}
         <div className="sticky top-0 h-screen flex flex-col">
+
+          {/* ── SCROLL HINT — fades out on scroll ── */}
+          <motion.div
+            className="absolute bottom-7 left-1/2 z-30 flex flex-col items-center gap-2 pointer-events-none"
+            style={{ x: "-50%", opacity: hintOpacity }}
+          >
+            <span className="font-jost text-[9px] tracking-[0.4em] uppercase text-[#c9a455]/60">
+              Scroll
+            </span>
+            <motion.svg
+              width="16" height="26" viewBox="0 0 16 26" fill="none"
+              animate={{ y: [0, 7, 0] }}
+              transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <rect x="1" y="1" width="14" height="24" rx="7" stroke="#c9a455" strokeOpacity="0.55" strokeWidth="1.3" />
+              <circle cx="8" cy="8" r="2" fill="#c9a455" />
+            </motion.svg>
+          </motion.div>
 
           {/* ── PAGE HEADER — left-aligned ── */}
           <motion.div

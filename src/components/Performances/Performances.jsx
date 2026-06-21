@@ -20,8 +20,8 @@ const CountUp = ({ to }) => {
   useEffect(() => {
     if (!inView) return;
     const controls = animate(0, to, {
-      duration: 1.6,
-      ease: [0.22, 1, 0.36, 1],
+      duration: 2.8,
+      ease: [0.33, 1, 0.68, 1],
       onUpdate: (v) => setN(Math.round(v)),
     });
     return () => controls.stop();
@@ -55,7 +55,12 @@ const PerfBlock = ({ label, places }) => {
       <SectionLabel text={label} />
 
       {/* Tour rail */}
-      <div className="overflow-x-auto pb-3 deva-scroll">
+      <div className="relative">
+        <div
+          ref={scrollRef}
+          onScroll={updateEdges}
+          className="overflow-x-auto pb-3 deva-scroll"
+        >
         <div className="flex" style={{ minWidth: "max-content" }}>
           {places.map((p, i) => {
             const on = i === sel;
@@ -105,6 +110,21 @@ const PerfBlock = ({ label, places }) => {
             );
           })}
         </div>
+        </div>
+
+        {/* Scroll hint — pulsing arrow while there's more to the right */}
+        {!edges.end && (
+          <div className="pointer-events-none absolute top-0 right-0 bottom-3 w-10 flex items-center justify-end pr-1">
+            <motion.span
+              className="text-[#c9a455]"
+              style={{ fontSize: 24, lineHeight: 1 }}
+              animate={{ x: [0, 6, 0], opacity: [0.45, 1, 0.45] }}
+              transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
+            >
+              ›
+            </motion.span>
+          </div>
+        )}
       </div>
 
       {/* Detail card */}
@@ -211,14 +231,23 @@ const Performances = () => {
           {stats.map((s, i) => (
             <motion.div
               key={i}
-              className="text-center py-6 px-3"
+              className="text-center py-6 px-3 cursor-default"
               style={{ background: "rgba(13,7,3,0.5)", border: "1px solid rgba(201,164,85,0.15)", borderRadius: 6 }}
               initial={{ opacity: 0, y: 18 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: i * 0.1 }}
+              whileHover={{
+                scale: 1.04,
+                borderColor: "rgba(201,164,85,0.6)",
+                boxShadow: "0 0 34px rgba(201,164,85,0.28)",
+                transition: { duration: 0.3 },
+              }}
             >
-              <div className="font-cinzel text-[2rem] md:text-[2.4rem] text-[#c9a455] leading-none">
+              <div
+                className="font-cinzel text-[2rem] md:text-[2.4rem] text-[#c9a455] leading-none"
+                style={{ textShadow: "0 0 20px rgba(201,164,85,0.45)" }}
+              >
                 <CountUp to={s.to} />+
               </div>
               <div className="font-jost text-[0.8rem] tracking-[0.1em] text-[#b8966e]/70 mt-2">

@@ -5,20 +5,27 @@ import PerformancesMobile from "../components/Performances/PerformancesMobile";
 
 // ── DATA ──────────────────────────────────────────────────
 const AWARDS = [
-  { year: "1994",    title: "First Prize · Inter District Music Competition",    org: "Dhanbad",                                               highlight: false },
-  { year: "2001",    title: "First Prize · Akhil Bharatiya Sangeet Pratiyogita", org: "Prayag Sangeet Samiti, Allahabad",                       highlight: false },
-  { year: "2001–02", title: "Inter College & East Zonal Youth Festival",         org: "AIU, Govt. of India",                                   highlight: false },
-  { year: "2002",    title: "All India Radio National Music Competition",         org: "Award conferred on behalf of the President of India",    highlight: true  },
-  { year: "2003",    title: "ITC–SRA Promising Artiste Award",                   org: "ITC–Sangeet Research Academy, Mumbai",                   highlight: false },
-  { year: "2006",    title: "Master of Music · Topper",                          org: "University of Calcutta",                                 highlight: false },
-  { year: "2018",    title: "National Film Award",                               org: "Conferred by the President of India · Girija – A Lifetime in Music", highlight: true },
-  { year: "2019",    title: "Person Who Cares for Art of the East",              org: "Sharq Taronalari Festival · UNESCO & Govt. of Uzbekistan", highlight: false },
+  { year: "1994",    title: "First Prize · Inter District Music Competition",         org: "Dhanbad",                                                                  highlight: false },
+  { year: "2001",    title: "First Prize · Akhil Bharatiya Sangeet Pratiyogita",      org: "Prayag Sangeet Samiti, Allahabad",                                          highlight: false },
+  { year: "2001–02", title: "First Prize · Inter College & East Zonal Youth Festival", org: "AIU, Govt. of India · Vinoba Bhave University & ISM Dhanbad",               highlight: false },
+  { year: "2002",    title: "PRESIDENT'S AWARD - AIR NATIONAL MUSIC COMPETITION",      org: "First prize conferred on behalf of President of India",                       highlight: true  },
+  { year: "2003",    title: "ITC–SRA Promising Artiste Award",                        org: "ITC–Sangeet Research Academy, Mumbai",                                      highlight: false },
+  { year: "2004",    title: "Golden Talent Contest",                                  org: "Pandit Ravi Kichlu Foundation",                                             highlight: false },
+  { year: "2006",    title: "Master of Music · Topper",                               org: "University of Calcutta",                                                    highlight: false },
+  { year: "2018",    title: "National Film Award - Best Documentary",                 org: "Conferred by the Hon'ble President of India · Girija – A Lifetime in Music", highlight: true  },
+  { year: "2019",    title: "Person Who Cares for Art of the East",                   org: "Sharq Taronalari International Music Festival · UNESCO & Ministry of Culture, Govt. of Uzbekistan", highlight: false },
 ];
 
 const FELLOWSHIPS = [
   { period: "2015–16", title: "National Junior Fellowship",  org: "Ministry of Culture, Govt. of India" },
   { period: "2003–05", title: "National Scholarship",        org: "Ministry of Culture, Govt. of India" },
   { period: "2005–10", title: "Jnana Pravaha Scholarship",   org: ""                                    },
+];
+
+const AFFILIATIONS = [
+  "Member, Indian Council for Cultural Relations (ICCR)",
+  "Diploma in Personal Fitness Training & Certified Nutritionist",
+  "Associate Certified Pranic Healer",
 ];
 
 const GALLERY_IMGS = [
@@ -481,6 +488,24 @@ const AboutMobile = () => {
                 <p className="font-jost font-light text-[0.88rem] text-[#f0e6d0]/75 leading-snug mb-0.5">{f.title}</p>
                 {f.org && <p className="font-jost text-[0.75rem] text-[#b8966e]/50">{f.org}</p>}
               </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Affiliations */}
+        <motion.div className="mt-9" {...fadeUp(0.1)}>
+          <p className="font-jost text-[11px] tracking-[0.4em] uppercase text-[#c9a455]/70 mb-5 flex items-center gap-3">
+            <span className="h-[1px] w-5 bg-[#c9a455]/50 inline-block" />
+            Affiliations &amp; Certifications
+          </p>
+          <div className="space-y-3">
+            {AFFILIATIONS.map((a, i) => (
+              <div key={i} className="flex items-start gap-3">
+                <span className="text-[#c9a455]/30 text-[8px] mt-[0.35rem] shrink-0">◆</span>
+                <p className="font-jost font-light text-[0.85rem] text-[#f0e6d0]/75 leading-relaxed tracking-[0.03em]">
+                  {a}
+                </p>
+              </div>
             ))}
           </div>
         </motion.div>
