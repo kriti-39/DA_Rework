@@ -16,7 +16,7 @@ const SRCS = [
   { src: "/assets/v8.jpeg",   },  // 13 V  ⚠ add hv11
   { src: "/assets/hv16.jpeg",  },
   { src: "/assets/hv13.jpeg",   },  // 18 V  ⚠ add hv13
-  { src: "/assets/hv12.jpeg",   },  // 19 V  ⚠ add hv14
+  { src: "/assets/new26.jpeg",   },  // 19 V  ⚠ add hv14
   { src: "/assets/hv15.jpeg",  },  // 20 V  ⚠ add hv15
   { src: "/assets/hv14.jpeg",  },
 ];
