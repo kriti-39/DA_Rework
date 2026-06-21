@@ -150,16 +150,12 @@ const LearnMobile = () => (
         </p>
         <div className="space-y-3 font-jost font-light text-[#b8966e] text-sm leading-[1.9] mb-5">
           <p>
-            Training is offered both{" "}
-            <span className="text-[#c9a455]/80 font-normal">online and in-person</span>,
-            structured around your schedule and pace of learning. Sessions are conducted in Bengali,
-            Hindi, or English.
-          </p>
-          <p>
-            The curriculum unfolds organically — from foundational sur and voice placement into
-            raga grammar, composition, and the subtleties of improvisation. No rigid syllabus; the
-            path is drawn by the student's ear and readiness.
-          </p>
+                    Classes are offered both <span className="text-[#c9a455]/80 font-normal">
+                      online and in-person
+                    </span>, and are shaped around your individual schedule and pace of learning. Sessions may be conducted in Bengali, Hindi, or English.
+Rather than following a rigid syllabus, the learning unfolds organically — guided by listening, absorption, and readiness. From foundational sur and voice placement, the journey gradually opens into raga grammar, bandish, and the deeper subtleties of improvisation.
+
+                  </p>
         </div>
       </motion.div>
 
@@ -192,6 +188,34 @@ const LearnMobile = () => (
           My teaching begins not with notes, but with listening."
         </p>
       </motion.blockquote>
+
+      <motion.div
+                className="mb-9 space-y-4 font-jost font-light text-[#b8966e]
+                           text-[0.88rem] md:text-[0.93rem] leading-[1.9]"
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{
+                  duration: 1.0,
+                  ease: [0.22, 1, 0.36, 1],
+                  delay: 0.15,
+                }}
+              >
+                <p>
+                  In the Indian classical tradition, the purity of art is
+                  preserved through the sacred{" "}
+                  <span className="font-playfair italic text-[#c9a455]/80">
+                    Guru–Shishya parampara
+                  </span>
+                  , where knowledge is passed down across generations with
+                  devotion, discipline, and deep spiritual understanding. A true Guru carries forward the spirit of a lineage, transmitting not only knowledge and technique but also the values, discipline, and emotional richness embedded within the tradition. Under such guidance, music transforms into a lifelong journey—an inheritance of sound, philosophy, and surrender.
+                </p>
+                <p>
+                  When you are learning from Sri. Debapriya Adhikary, you are
+                  receiving a culmination of the teachings received from his
+                  Gurus coupled with his own studies and realisations.
+                </p>
+              </motion.div>
 
       {/* Trained Under */}
       <motion.div className="mb-8" {...fadeUp(0.1)}>
@@ -242,21 +266,22 @@ const LearnMobile = () => (
         </p>
         <div className="font-jost font-light text-[#b8966e] text-sm leading-[1.9] space-y-3">
           <p>
-            Debapriya Adhikary conducts in-depth workshops designed to provide a
-            comprehensive understanding of Hindustani classical vocal music. These
-            sessions focus on strengthening the voice, improving tonal quality, and
-            developing control through systematic practice techniques. Special
-            emphasis is given to paltas, breath control, and building a strong
-            foundation essential for advanced musical expression.
-          </p>
-          <p>
-            The workshops also explore key elements of gayaki, including bandish
-            development, tappa, and stylistic nuances across forms. Through detailed
-            explanations, demonstrations, and interactive learning, participants gain
-            practical insights into both the technical and aesthetic aspects of music,
-            making these workshops enriching for students, performers, and enthusiasts
-            alike.
-          </p>
+                Debapriya Adhikary conducts in-depth workshops designed to
+                provide a comprehensive understanding of Hindustani classical
+                vocal music. These sessions focus on strengthening the voice,
+                improving tonal quality, and developing control through
+                systematic practice techniques. Special emphasis is given to
+                paltas, breath control, and building a strong foundation
+                essential for advanced musical expression.
+              </p>
+              <p>
+                The workshops also explore key elements of gayaki, including
+                bandish development, tappa, and stylistic nuances across forms.
+                Through detailed explanations, demonstrations, and interactive
+                learning, participants gain practical insights into both the
+                technical and aesthetic aspects of music, making these workshops
+                enriching for students, performers, and enthusiasts alike.
+              </p>
         </div>
       </motion.div>
 
@@ -317,7 +342,7 @@ const LearnMobile = () => (
                      hover:border-[#c9a455] transition-all duration-300"
         >
           <span className="text-[#c9a455]/50 text-[7px]">◆</span>
-          Stay Tuned for Upcoming Workshops →
+          Upcoming Workshops →
         </a>
       </div>
     </section>

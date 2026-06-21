@@ -178,7 +178,7 @@ performance, teaching, & devotion to the music.
         <div className="max-w-[1100px] mx-auto px-8 md:px-16 py-5
                         flex items-center justify-between">
           <p className="font-jost text-[8px] tracking-[0.3em] uppercase text-[#b8966e]/30">
-            © 2025 Debapriya Adhikary. All Rights Reserved.
+            © 2026 Debapriya Adhikary. All Rights Reserved.
           </p>
           <p className="font-jost text-[8px] tracking-[0.25em] uppercase text-[#b8966e]/20">
             Hindustani Classical Music

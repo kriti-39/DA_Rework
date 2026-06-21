@@ -126,7 +126,7 @@ const FooterMobile = () => (
     {/* Bottom bar */}
     <div className="border-t border-[#c9a455]/10 px-6 py-4 text-center">
       <p className="font-jost text-[8px] tracking-[0.25em] uppercase text-[#b8966e]/30">
-        © 2025 Debapriya Adhikary. All Rights Reserved.
+        © 2026 Debapriya Adhikary. All Rights Reserved.
       </p>
     </div>
 
