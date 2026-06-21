@@ -42,7 +42,7 @@ const MARQUEE_IMGS = [...GALLERY_IMGS, ...GALLERY_IMGS];
 const DEVASAMAN_TRIO = [
   { src: "/assets/SM.jpg",  label: "Samanwaya Sarkar"   },
   { src: "/assets/devasaman.jpeg", label: "DevaSaman"           },
-  { src: "/assets/AG7.JPG",  label: "Debapriya Adhikary"  },
+  { src: "/assets/AG7.jpg",  label: "Debapriya Adhikary"  },
 ];
 
 // ── HELPERS ───────────────────────────────────────────────
