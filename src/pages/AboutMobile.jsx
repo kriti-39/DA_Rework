@@ -41,7 +41,7 @@ const MARQUEE_IMGS = [...GALLERY_IMGS, ...GALLERY_IMGS];
 
 const DEVASAMAN_TRIO = [
   { src: "/assets/SM.jpg",  label: "Samanwaya Sarkar"   },
-  { src: "/assets/devasamn.jpeg", label: "DevaSaman"           },
+  { src: "/assets/devasaman.jpeg", label: "DevaSaman"           },
   { src: "/assets/DA.JPG",  label: "Debapriya Adhikary"  },
 ];
 
