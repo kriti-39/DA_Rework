@@ -335,7 +335,7 @@ const LearnMobile = () => (
           Open to All
         </h2>
         <p className="font-playfair italic text-[#c9a455]/80 text-[0.95rem] mb-3">
-          Two ongoing YouTube series — freely available, no enrolment required
+          All freely available lessons on You Tube
         </p>
         <p className="font-jost font-light text-[#b8966e] text-sm leading-[1.9]">
           A growing library of recordings for anyone who wishes to listen, observe and absorb.
