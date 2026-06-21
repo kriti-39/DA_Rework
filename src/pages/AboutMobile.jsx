@@ -352,9 +352,7 @@ const AboutMobile = () => {
             We used to be awestruck by her simplicity, nurtured in the midst of her divinity." … the
             duo says. "Life was never so beautiful until we began to see music through her, and
             understand the subtleties she revealed with every word of music she uttered."
-            <span className="block mt-2 not-italic font-jost text-[10px] tracking-[0.3em] uppercase text-[#c9a455]/50">
-              — Debapriya Adhikary &amp; Samanwaya Sarkar
-            </span>
+            
           </motion.p>
 
           <motion.p {...fadeUp(0.1)}>
