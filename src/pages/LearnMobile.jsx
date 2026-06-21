@@ -197,7 +197,7 @@ const LearnMobile = () => (
       <motion.div className="mb-8" {...fadeUp(0.1)}>
         <p className="font-jost text-[11px] tracking-[0.4em] uppercase text-[#c9a455]/70 mb-4 flex items-center gap-3">
           <span className="h-[1px] w-5 bg-[#c9a455]/50 inline-block" />
-          Trained Under
+          Gurus
         </p>
         <div className="space-y-4 border-l border-[#c9a455]/15 pl-4">
           {GURUS.map((g, i) => (
