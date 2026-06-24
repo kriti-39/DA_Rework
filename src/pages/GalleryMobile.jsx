@@ -193,7 +193,7 @@ const GalleryMobile = () => {
           className="flex items-end"
           style={{ gap: C_GAP, width: "max-content" }}
           animate={{ x: [0, -C_TRACK_W] }}
-          transition={{ duration: 55, repeat: Infinity, ease: "linear", repeatType: "loop" }}
+          transition={{ duration: 75, repeat: Infinity, ease: "linear", repeatType: "loop" }}
         >
           {[...CAROUSEL_IMGS, ...CAROUSEL_IMGS].map((img, i) => (
             <div
