@@ -14,7 +14,7 @@ const SRCS = [
   // ── LEFT row2 — horizontal ──
   { src: "/assets/hh3.jpg",   caption: "Moments in Music" },  // 4  H
   { src: "/assets/hh2.jpg",   caption: "Moments in Music" },  // 5  H
-  { src: "/assets/hh1.jpg",   caption: "Moments in Music" },  // 6  H
+  { src: "/assets/new01.jpeg",   caption: "Moments in Music" },  // 6  H
   // ── LEFT row3 — vertical ──
   { src: "/assets/hv5.jpg",   caption: "Moments in Music" },  // 7  V
   { src: "/assets/new13.jpeg",   caption: "Moments in Music" },  // 8  V
@@ -31,7 +31,7 @@ const SRCS = [
   { src: "/assets/concert.jpeg",   caption: "Moments in Music" },  // 17 H
   // ── RIGHT row3 — vertical ──
   { src: "/assets/hv13.jpeg",  caption: "Moments in Music" },  // 18 V  ⚠ add hv13
-  { src: "/assets/new19.jpeg",  caption: "Moments in Music" },  // 19 V  ⚠ add hv14
+  { src: "/assets/new23.jpeg",  caption: "Moments in Music" },  // 19 V  ⚠ add hv14
   { src: "/assets/new16.jpeg",  caption: "Moments in Music" },  // 20 V  ⚠ add hv15
   { src: "/assets/new18.jpeg",  caption: "Moments in Music" },  // 21 V  ⚠ add hv16
 ];
