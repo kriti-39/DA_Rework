@@ -133,7 +133,7 @@ const GalleryTeaserMobile = () => {
           className="flex gap-3 pb-2"
           style={{ width: "max-content" }}
           animate={{ x: ["0%", "-50%"] }}
-          transition={{ duration: 55, repeat: Infinity, ease: "linear" }}
+          transition={{ duration: 104, repeat: Infinity, ease: "linear" }}
         >
           {/* Duplicate array for seamless infinite loop */}
           {[...SRCS, ...SRCS].map((item, i) => (

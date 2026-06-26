@@ -122,7 +122,7 @@ const GalleryMobile = () => {
             className="flex gap-3"
             style={{ width: "max-content" }}
             animate={{ x: ["0%", "-50%"] }}
-            transition={{ duration: 55, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 57, repeat: Infinity, ease: "linear" }}
           >
             {[...CARDS, ...CARDS].map((card, i) => (
               <div
@@ -193,7 +193,7 @@ const GalleryMobile = () => {
           className="flex items-end"
           style={{ gap: C_GAP, width: "max-content" }}
           animate={{ x: [0, -C_TRACK_W] }}
-          transition={{ duration: 75, repeat: Infinity, ease: "linear", repeatType: "loop" }}
+          transition={{ duration: 247, repeat: Infinity, ease: "linear", repeatType: "loop" }}
         >
           {[...CAROUSEL_IMGS, ...CAROUSEL_IMGS].map((img, i) => (
             <div

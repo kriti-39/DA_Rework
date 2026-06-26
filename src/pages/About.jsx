@@ -747,7 +747,7 @@ He holds a Master’s degree in Music and was awarded the Junior Research Fellow
               width:              "max-content",
               paddingTop:         28,
               paddingBottom:      28,
-              animation:          "galleryMarquee 65s linear infinite",
+              animation:          "galleryMarquee 132s linear infinite",
               animationPlayState: lbIdx !== null ? "paused" : "running",
             }}
           >

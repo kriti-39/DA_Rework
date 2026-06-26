@@ -383,7 +383,7 @@ const Gallery = () => {
             className="flex items-end"
             style={{ gap: C_GAP, width: "max-content" }}
             animate={{ x: [0, -C_TRACK_W] }}
-            transition={{ duration: 70, repeat: Infinity, ease: "linear", repeatType: "loop" }}
+            transition={{ duration: 252, repeat: Infinity, ease: "linear", repeatType: "loop" }}
           >
             {[...CAROUSEL_IMGS, ...CAROUSEL_IMGS].map((img, i) => (
               <motion.div

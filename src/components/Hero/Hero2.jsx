@@ -1,6 +1,7 @@
 import { useMemo, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import HeroMobile from "./HeroMobile";
+import HeroTablet from "./HeroTablet";
 
 // ── GOLDEN WAVE LINES ─────────────────────────────────────
 const GoldenWaves = () => {
@@ -84,10 +85,15 @@ const Hero2 = () => {
   return (
     <section className="relative w-full overflow-x-hidden">
 
+      {/* ── TABLET LAYOUT — see HeroTablet.jsx ── */}
+      <div className="hidden md:block lg:hidden">
+        <HeroTablet />
+      </div>
+
       {/* ══════════════════════════════════════════════════
           DESKTOP LAYOUT — completely unchanged
       ══════════════════════════════════════════════════ */}
-      <div className="hidden md:flex flex-col items-center">
+      <div className="hidden lg:flex flex-col items-center">
 
         {/* Name — z-10, behind photo, moves DOWN */}
         <motion.div
