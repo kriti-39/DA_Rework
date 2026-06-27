@@ -87,7 +87,7 @@ const Navbar = () => {
           y: { duration: 0.45, ease: [0.76, 0, 0.24, 1] },
         }}
       >
-        <div className="px-8 md:px-16 lg:px-24 py-5 flex items-center justify-between">
+        <div className="px-8 md:px-10 lg:px-24 py-5 flex items-center justify-between">
 
           {/* Logo */}
           <Link
@@ -98,8 +98,8 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop: nav links + audio */}
-          <div className="hidden md:flex items-center gap-10">
-            <ul className="flex items-center gap-10">
+          <div className="hidden md:flex items-center gap-6 lg:gap-10">
+            <ul className="flex items-center gap-6 lg:gap-10">
               {navLinks.map((link) => {
                 const isActive = link.hash
                   ? location.pathname === "/learn" && location.hash === link.hash

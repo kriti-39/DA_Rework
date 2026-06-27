@@ -57,8 +57,7 @@ const WatchSectionTablet = () => {
           {[...videos, ...videos].map((video, i) => (
             <motion.div
               key={i}
-              className="relative flex-none overflow-hidden rounded-xl cursor-pointer group"
-              style={{ width: "62vw", aspectRatio: "16 / 9" }}
+              className="relative flex-none overflow-hidden rounded-xl cursor-pointer group w-[62vw] landscape:w-[40vw] aspect-video"
               onClick={() => window.open(video.url, "_blank", "noopener")}
             >
               <img src={video.img} alt={video.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />

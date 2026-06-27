@@ -6,10 +6,13 @@ import Footer       from "./components/Footer/Footer";
 import FooterMobile from "./components/Footer/FooterMobile";
 import Home from "./pages/Home";
 import About       from "./pages/About";
+import AboutTablet from "./pages/AboutTablet";
 import AboutMobile from "./pages/AboutMobile";
 import Learn       from "./pages/Learn";
+import LearnTablet from "./pages/LearnTablet";
 import LearnMobile from "./pages/LearnMobile";
 import Gallery       from "./pages/Gallery";
+import GalleryTablet from "./pages/GalleryTablet";
 import GalleryMobile from "./pages/GalleryMobile";
 
 const ScrollToTop = () => {
@@ -43,9 +46,21 @@ const App = () => {
         <NavbarMobile />
         <Routes>
           <Route path="/"        element={<Home />}    />
-          <Route path="/about"   element={<><div className="hidden md:block"><About /></div><AboutMobile /></>} />
-          <Route path="/learn"   element={<><div className="hidden md:block"><Learn /></div><LearnMobile /></>} />
-          <Route path="/gallery" element={<><div className="hidden md:block"><Gallery /></div><GalleryMobile /></>} />
+          <Route path="/about"   element={<>
+            <div className="hidden lg:landscape:block xl:block"><About /></div>
+            <div className="hidden md:block lg:landscape:hidden xl:hidden"><AboutTablet /></div>
+            <AboutMobile />
+          </>} />
+          <Route path="/learn"   element={<>
+            <div className="hidden lg:landscape:block xl:block"><Learn /></div>
+            <div className="hidden md:block lg:landscape:hidden xl:hidden"><LearnTablet /></div>
+            <LearnMobile />
+          </>} />
+          <Route path="/gallery" element={<>
+            <div className="hidden lg:landscape:block xl:block"><Gallery /></div>
+            <div className="hidden md:block lg:landscape:hidden xl:hidden"><GalleryTablet /></div>
+            <GalleryMobile />
+          </>} />
         </Routes>
         <div className="hidden md:block"><Footer /></div>
         <FooterMobile />

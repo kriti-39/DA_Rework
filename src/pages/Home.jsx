@@ -16,19 +16,19 @@ const Home = () => {
     <>
       <Hero2 />
 
-      <div className="hidden xl:block"><AboutTeaser /></div>
-      <div className="hidden md:block xl:hidden"><AboutTeaserTablet /></div>
+      <div className="hidden lg:landscape:block xl:block"><AboutTeaser /></div>
+      <div className="hidden md:block lg:landscape:hidden xl:hidden"><AboutTeaserTablet /></div>
       <AboutTeaserMobile />
 
-      <div className="hidden xl:block"><WatchSection /></div>
-      <div className="hidden md:block xl:hidden"><WatchSectionTablet /></div>
+      <div className="hidden min-[1400px]:block"><WatchSection /></div>
+      <div className="hidden md:block min-[1400px]:hidden"><WatchSectionTablet /></div>
       <WatchSectionMobile />
 
-      <div className="hidden xl:block"><LearnSection /></div>
-      <div className="hidden md:block xl:hidden"><LearnSectionTablet /></div>
+      <div className="hidden lg:landscape:block xl:block"><LearnSection /></div>
+      <div className="hidden md:block lg:landscape:hidden xl:hidden"><LearnSectionTablet /></div>
       <LearnSectionMobile />
 
-      <div className="hidden xl:block"><GalleryTeaser /></div>
+      <div className="hidden lg:landscape:block xl:block"><GalleryTeaser /></div>
       <GalleryTeaserMobile />
     </>
   );

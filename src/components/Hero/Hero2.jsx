@@ -2,6 +2,7 @@ import { useMemo, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import HeroMobile from "./HeroMobile";
 import HeroTablet from "./HeroTablet";
+import HeroTabletPortrait from "./HeroTabletPortrait";
 
 // ── GOLDEN WAVE LINES ─────────────────────────────────────
 const GoldenWaves = () => {
@@ -85,9 +86,12 @@ const Hero2 = () => {
   return (
     <section className="relative w-full overflow-x-hidden">
 
-      {/* ── TABLET LAYOUT — see HeroTablet.jsx ── */}
+      {/* ── TABLET LAYOUT (768–1279px) — split by orientation ──
+          Portrait  → phone-style stacked hero  (HeroTabletPortrait)
+          Landscape → desktop-style hero        (HeroTablet)        */}
       <div className="hidden md:block xl:hidden">
-        <HeroTablet />
+        <div className="landscape:hidden"><HeroTabletPortrait /></div>
+        <div className="portrait:hidden"><HeroTablet /></div>
       </div>
 
       {/* ══════════════════════════════════════════════════

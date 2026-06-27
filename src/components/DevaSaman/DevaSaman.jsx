@@ -113,14 +113,17 @@ const DevaSaman = () => {
           </motion.div>
         </div>{/* end text+bg wrapper */}
 
-        {/* ── Three-image trio ── */}
-        <div
-          className="mt-8 items-start"
-          style={{ display: "grid", gridTemplateColumns: "1.3fr 2.8fr 1.3fr", gap: "10px", alignItems: "center" }}
-        >
+        {/* ── Three-image trio ──
+            Landscape/desktop: 3-column row (unchanged).
+            Portrait (tablet/phone): single column — sides shown whole
+            (object-contain) so portraits aren't cropped; centre group photo
+            full-width. Fixes images being cut in the squeezed columns. */}
+        <div className="mt-8 grid gap-4 items-center justify-items-center
+                        grid-cols-1 landscape:grid-cols-[1.3fr_2.8fr_1.3fr] landscape:gap-2.5">
           {TRIO.map(({ src, label, offsetY }, i) => (
             <motion.div
               key={i}
+              className="w-full"
               style={{ marginTop: offsetY }}
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -132,7 +135,7 @@ const DevaSaman = () => {
               }}
             >
               <motion.div
-                style={{ height: i === 1 ? "420px" : "336px", cursor: "pointer" }}
+                className={`cursor-pointer w-full ${i === 1 ? "landscape:h-[420px]" : "landscape:h-[336px]"}`}
                 whileHover={{
                   boxShadow: "0 6px 28px rgba(201,164,85,0.14)",
                   transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] },
@@ -141,12 +144,13 @@ const DevaSaman = () => {
                 <img
                   src={src}
                   alt={label}
+                  className={`block mx-auto landscape:w-full landscape:h-full landscape:object-cover ${
+                    i === 1
+                      ? "w-full h-auto object-contain max-h-[62vh]"
+                      : "w-auto h-auto object-contain max-h-[58vh] portrait:max-h-[460px]"
+                  }`}
                   style={{
-                    width:          "100%",
-                    height:         "100%",
-                    objectFit:      "cover",
                     objectPosition: i === 1 ? "center 30%" : "center center",
-                    display:        "block",
                     filter:         "brightness(0.82) sepia(0.10)",
                     maskImage:
                       "radial-gradient(ellipse 90% 88% at 50% 50%, black 30%, transparent 100%)",
