@@ -86,14 +86,14 @@ const Hero2 = () => {
     <section className="relative w-full overflow-x-hidden">
 
       {/* ── TABLET LAYOUT — see HeroTablet.jsx ── */}
-      <div className="hidden md:block lg:hidden">
+      <div className="hidden md:block xl:hidden">
         <HeroTablet />
       </div>
 
       {/* ══════════════════════════════════════════════════
           DESKTOP LAYOUT — completely unchanged
       ══════════════════════════════════════════════════ */}
-      <div className="hidden lg:flex flex-col items-center">
+      <div className="hidden xl:flex flex-col items-center">
 
         {/* Name — z-10, behind photo, moves DOWN */}
         <motion.div
